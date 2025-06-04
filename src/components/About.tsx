@@ -1,53 +1,50 @@
 
 const About = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-white to-linguaglee-lavender/10">
+    <section className="py-20 bg-gradient-to-br from-black via-purple-900/50 to-black">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
             <img 
-              src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-              alt="Glamorous evening atmosphere with sparkles" 
-              className="rounded-2xl shadow-2xl w-full h-96 object-cover border-4 border-white/50"
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              alt="Glamorous rooftop evening" 
+              className="rounded-none shadow-2xl w-full h-96 object-cover border border-pink-400/30"
             />
           </div>
           
           <div className="order-1 md:order-2 space-y-8">
-            <h2 className="font-playfair text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-              This Isn't Just English Class.<br />
-              <span className="text-linguaglee-pink">It's a Lifestyle Glow-Up.</span>
+            <h2 className="font-playfair text-4xl md:text-6xl font-bold text-white leading-tight">
+              This isn't just English class.<br />
+              <span className="bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent">
+                It's a lifestyle glow-up.
+              </span>
             </h2>
             
-            <p className="font-montserrat text-xl text-gray-700 leading-relaxed italic">
+            <p className="font-playfair text-2xl text-pink-200 leading-relaxed italic">
               8 unforgettable evenings.<br />
               Champagne energy.<br />
               English you'll actually use.
             </p>
             
             <div className="space-y-6">
-              <div className="flex items-center space-x-4 bg-white/70 p-4 rounded-xl shadow-md">
-                <span className="text-3xl">🥂</span>
-                <p className="font-montserrat text-gray-800 font-medium">Rooftop English salon (not boring sessions!)</p>
+              <div className="border-l-4 border-pink-400 pl-6 bg-black/30 backdrop-blur-sm p-6">
+                <p className="font-playfair text-white font-medium text-lg">Rooftop English salon under the stars</p>
               </div>
               
-              <div className="flex items-center space-x-4 bg-white/70 p-4 rounded-xl shadow-md">
-                <span className="text-3xl">📔</span>
-                <p className="font-montserrat text-gray-800 font-medium">Custom glam workbook + zine project</p>
+              <div className="border-l-4 border-purple-400 pl-6 bg-black/30 backdrop-blur-sm p-6">
+                <p className="font-playfair text-white font-medium text-lg">Custom glam workbook</p>
               </div>
               
-              <div className="flex items-center space-x-4 bg-white/70 p-4 rounded-xl shadow-md">
-                <span className="text-3xl">👠</span>
-                <p className="font-montserrat text-gray-800 font-medium">Max 4 women per group = real connection</p>
+              <div className="border-l-4 border-pink-400 pl-6 bg-black/30 backdrop-blur-sm p-6">
+                <p className="font-playfair text-white font-medium text-lg">Max 4 women = real connection</p>
               </div>
               
-              <div className="flex items-center space-x-4 bg-white/70 p-4 rounded-xl shadow-md">
-                <span className="text-3xl">💌</span>
-                <p className="font-montserrat text-gray-800 font-medium">Final champagne speech night</p>
+              <div className="border-l-4 border-purple-400 pl-6 bg-black/30 backdrop-blur-sm p-6">
+                <p className="font-playfair text-white font-medium text-lg">Final rooftop toast & showcase</p>
               </div>
               
-              <div className="flex items-center space-x-4 bg-white/70 p-4 rounded-xl shadow-md">
-                <span className="text-3xl">🎓</span>
-                <p className="font-montserrat text-gray-800 font-medium">Chic certificate of completion</p>
+              <div className="border-l-4 border-pink-400 pl-6 bg-black/30 backdrop-blur-sm p-6">
+                <p className="font-playfair text-white font-medium text-lg">Certificate you'll actually be proud to post</p>
               </div>
             </div>
           </div>

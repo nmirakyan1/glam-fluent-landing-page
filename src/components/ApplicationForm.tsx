@@ -21,8 +21,8 @@ const ApplicationForm = () => {
     
     if (!formData.agreement) {
       toast({
-        title: "Please confirm you're ready! ✨",
-        description: "Check the box to confirm you're ready for this fabulous journey.",
+        title: "Please confirm your commitment",
+        description: "Check the box to confirm you're ready for this transformation.",
         variant: "destructive"
       });
       return;
@@ -31,8 +31,8 @@ const ApplicationForm = () => {
     console.log('Application submitted:', formData);
     
     toast({
-      title: "Application Submitted! 🎉",
-      description: "Gorgeous! We'll be in touch within 24 hours to confirm your spot. Get ready to glow up! ✨",
+      title: "Application Submitted!",
+      description: "We'll be in touch within 24 hours to confirm your spot. Get ready to transform!",
     });
 
     // Reset form
@@ -53,21 +53,21 @@ const ApplicationForm = () => {
   };
 
   return (
-    <section id="application-form" className="py-20 bg-white">
+    <section id="application-form" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 text-center mb-8">
-            Ready to glow up your English? ✨
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white text-center mb-8">
+            Apply for Fluent & Fabulous
           </h2>
           
-          <p className="font-montserrat text-xl text-gray-600 text-center mb-12">
-            Let's make this happen, gorgeous!
+          <p className="font-playfair text-xl text-pink-200 text-center mb-12">
+            Ready to glow up your English?
           </p>
           
-          <form onSubmit={handleSubmit} className="space-y-8 bg-gradient-to-br from-linguaglee-pink/10 to-linguaglee-lavender/10 p-10 rounded-3xl shadow-2xl border-4 border-white/50">
+          <form onSubmit={handleSubmit} className="space-y-8 bg-black/60 backdrop-blur-sm border-2 border-pink-400/30 p-10 shadow-2xl">
             <div>
-              <Label htmlFor="fullName" className="font-montserrat font-semibold text-gray-800 text-lg">
-                Name ✨
+              <Label htmlFor="fullName" className="font-playfair font-semibold text-white text-lg mb-3 block">
+                Name
               </Label>
               <Input
                 id="fullName"
@@ -76,14 +76,14 @@ const ApplicationForm = () => {
                 required
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className="mt-3 border-2 border-linguaglee-pink/50 focus:border-linguaglee-pink rounded-xl py-3 text-lg"
-                placeholder="Your gorgeous name"
+                className="bg-black/40 border-2 border-pink-400/50 focus:border-pink-400 text-white py-4 text-lg backdrop-blur-sm"
+                placeholder="Your name"
               />
             </div>
             
             <div>
-              <Label htmlFor="contact" className="font-montserrat font-semibold text-gray-800 text-lg">
-                WhatsApp or Email 💌
+              <Label htmlFor="contact" className="font-playfair font-semibold text-white text-lg mb-3 block">
+                Email
               </Label>
               <Input
                 id="contact"
@@ -92,14 +92,14 @@ const ApplicationForm = () => {
                 required
                 value={formData.contact}
                 onChange={handleInputChange}
-                className="mt-3 border-2 border-linguaglee-pink/50 focus:border-linguaglee-pink rounded-xl py-3 text-lg"
-                placeholder="How can we reach you?"
+                className="bg-black/40 border-2 border-purple-400/50 focus:border-purple-400 text-white py-4 text-lg backdrop-blur-sm"
+                placeholder="Your email"
               />
             </div>
             
             <div>
-              <Label htmlFor="motivation" className="font-montserrat font-semibold text-gray-800 text-lg">
-                Why do you want to join? 💫
+              <Label htmlFor="motivation" className="font-playfair font-semibold text-white text-lg mb-3 block">
+                Why this is for you
               </Label>
               <Textarea
                 id="motivation"
@@ -107,33 +107,30 @@ const ApplicationForm = () => {
                 required
                 value={formData.motivation}
                 onChange={handleInputChange}
-                className="mt-3 border-2 border-linguaglee-pink/50 focus:border-linguaglee-pink min-h-[120px] rounded-xl text-lg"
+                className="bg-black/40 border-2 border-pink-400/50 focus:border-pink-400 min-h-[120px] text-white text-lg backdrop-blur-sm"
                 placeholder="Tell us what's calling you to this experience..."
               />
             </div>
             
-            <div className="flex items-start space-x-4 bg-white/70 p-6 rounded-2xl">
+            <div className="flex items-start space-x-4 bg-black/40 backdrop-blur-sm border border-purple-400/30 p-6">
               <Checkbox
                 id="agreement"
                 checked={formData.agreement}
                 onCheckedChange={(checked) => 
                   setFormData(prev => ({ ...prev, agreement: checked as boolean }))
                 }
-                className="mt-1 border-2 border-linguaglee-pink/70 data-[state=checked]:bg-linguaglee-pink w-5 h-5"
+                className="mt-1 border-2 border-pink-400/70 data-[state=checked]:bg-pink-600 w-5 h-5"
               />
-              <Label htmlFor="agreement" className="font-montserrat text-lg text-gray-700 leading-relaxed">
-                I'm ready for the $400 journey 🛍️ <br />
-                <span className="text-sm italic text-gray-600">
-                  (And I understand spots are limited because this is exclusive!)
-                </span>
+              <Label htmlFor="agreement" className="font-playfair text-lg text-white leading-relaxed">
+                I'm ready to invest in this glow-up.
               </Label>
             </div>
             
             <Button 
               type="submit"
-              className="w-full bg-gradient-to-r from-linguaglee-pink to-linguaglee-pink/80 hover:from-linguaglee-pink/90 hover:to-linguaglee-pink/70 text-white font-montserrat font-bold py-6 text-2xl rounded-full shadow-2xl hover:shadow-pink-300/50 transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
+              className="w-full bg-gradient-to-r from-pink-600 to-purple-700 hover:from-pink-700 hover:to-purple-800 text-white font-playfair font-bold py-6 text-2xl rounded-none shadow-2xl hover:shadow-pink-500/25 transition-all duration-500 transform hover:scale-105 border-2 border-pink-400/30"
             >
-              Apply Now ✨
+              Apply Now
             </Button>
           </form>
         </div>
