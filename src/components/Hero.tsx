@@ -50,7 +50,7 @@ const Hero = () => {
             <div className="relative mb-6">
               <h1 className="font-poppins font-black text-white mb-2 drop-shadow-2xl leading-none">
                 <span className="block text-6xl md:text-8xl tracking-tight">One Hour</span>
-                <span className="block text-6xl md:text-8xl tracking-tight text-[#cc0a65] italic">of Girl Power</span>
+                <span className="block text-6xl md:text-8xl tracking-tight text-[#cc0a65]">of Girl Power</span>
               </h1>
             </div>
             
@@ -59,8 +59,8 @@ const Hero = () => {
               by LinguaGlee
             </p>
             
-            {/* New two-line tagline */}
-            <div className="font-playfair text-xl md:text-2xl font-light text-white mb-12 leading-relaxed max-w-4xl mx-auto drop-shadow-lg italic text-center tracking-wide">
+            {/* New two-line tagline with updated font */}
+            <div className="font-poppins text-xl md:text-2xl font-light text-white mb-12 leading-relaxed max-w-4xl mx-auto drop-shadow-lg text-center tracking-wide">
               <p className="mb-2">One unforgettable hour.</p>
               <p>English. Confidence. Sparkle. Sisterhood.</p>
             </div>
