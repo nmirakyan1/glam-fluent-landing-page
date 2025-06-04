@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,7 +62,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Brand colors
 				'linguaglee-pink': '#e49dc2',
 				'linguaglee-gold': '#f4d03f',
 				'linguaglee-lavender': '#e8d5e8'
@@ -78,6 +76,12 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			blur: {
+				'xs': '2px'
+			},
+			textShadow: {
+				'glow': '0 0 10px rgba(236, 43, 141, 0.5), 0 0 20px rgba(236, 43, 141, 0.3), 0 0 30px rgba(236, 43, 141, 0.2)'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -126,6 +130,26 @@ export default {
 					'100%': {
 						transform: 'translateX(100%)'
 					}
+				},
+				'glow': {
+					'0%, 100%': {
+						textShadow: '0 0 5px rgba(236, 43, 141, 0.5), 0 0 10px rgba(236, 43, 141, 0.3), 0 0 15px rgba(236, 43, 141, 0.2)',
+						opacity: '0.8'
+					},
+					'50%': {
+						textShadow: '0 0 10px rgba(236, 43, 141, 0.8), 0 0 20px rgba(236, 43, 141, 0.6), 0 0 30px rgba(236, 43, 141, 0.4)',
+						opacity: '1'
+					}
+				},
+				'sparkle-text': {
+					'0%, 100%': {
+						textShadow: '0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(236, 43, 141, 0.3)',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						textShadow: '0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(236, 43, 141, 0.6), 0 0 30px rgba(236, 43, 141, 0.4)',
+						transform: 'scale(1.02)'
+					}
 				}
 			},
 			animation: {
@@ -133,9 +157,21 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'sparkle': 'sparkle 3s ease-in-out infinite',
-				'shimmer': 'shimmer 4s ease-in-out infinite'
+				'shimmer': 'shimmer 4s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite',
+				'sparkle-text': 'sparkle-text 3s ease-in-out infinite'
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		function({ addUtilities }) {
+			const newUtilities = {
+				'.text-shadow-glow': {
+					textShadow: '0 0 10px rgba(236, 43, 141, 0.5), 0 0 20px rgba(236, 43, 141, 0.3), 0 0 30px rgba(236, 43, 141, 0.2)'
+				}
+			}
+			addUtilities(newUtilities)
+		}
+	],
 } satisfies Config;

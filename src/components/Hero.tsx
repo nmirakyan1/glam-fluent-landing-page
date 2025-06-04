@@ -30,20 +30,23 @@ const Hero = () => {
         />
       </div>
 
-      {/* Sparkly glass panel */}
+      {/* Sparkly glass panel - made even bigger */}
       <div className="absolute inset-0 flex items-center justify-center z-5">
-        <div className="relative backdrop-blur-[3px] bg-gradient-to-br from-white/8 via-white/3 to-white/6 rounded-3xl p-20 max-w-6xl mx-4 shadow-2xl border border-white/10">
-          {/* Additional sparkle layers inside the glass */}
-          <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.15),_transparent_40%),radial-gradient(circle_at_80%_80%,_rgba(236,43,141,0.1),_transparent_40%),radial-gradient(circle_at_60%_40%,_rgba(255,255,255,0.08),_transparent_30%)] animate-sparkle"></div>
+        <div className="relative backdrop-blur-[3px] bg-gradient-to-br from-white/8 via-white/3 to-white/6 rounded-3xl p-24 max-w-7xl mx-4 shadow-2xl border border-white/10">
+          {/* Enhanced sparkle layers inside the glass */}
+          <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.2),_transparent_40%),radial-gradient(circle_at_80%_80%,_rgba(236,43,141,0.15),_transparent_40%),radial-gradient(circle_at_60%_40%,_rgba(255,255,255,0.12),_transparent_30%),radial-gradient(circle_at_40%_80%,_rgba(255,215,0,0.1),_transparent_35%)] animate-sparkle"></div>
           
-          {/* Shimmer effect */}
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite] opacity-60"></div>
+          {/* Enhanced shimmer effect */}
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/8 to-transparent animate-[shimmer_3s_ease-in-out_infinite] opacity-80"></div>
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-l from-transparent via-pink-300/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite_reverse] opacity-60"></div>
           
-          {/* Floating sparkles */}
-          <div className="absolute top-8 left-12 w-2 h-2 bg-white/40 rounded-full animate-[pulse_2s_ease-in-out_infinite]"></div>
-          <div className="absolute top-16 right-16 w-1 h-1 bg-pink-300/60 rounded-full animate-[pulse_3s_ease-in-out_infinite]"></div>
-          <div className="absolute bottom-12 left-20 w-1.5 h-1.5 bg-white/50 rounded-full animate-[pulse_2.5s_ease-in-out_infinite]"></div>
-          <div className="absolute bottom-20 right-12 w-1 h-1 bg-yellow-200/50 rounded-full animate-[pulse_3.5s_ease-in-out_infinite]"></div>
+          {/* More floating sparkles */}
+          <div className="absolute top-8 left-12 w-2 h-2 bg-white/50 rounded-full animate-[pulse_2s_ease-in-out_infinite]"></div>
+          <div className="absolute top-16 right-16 w-1 h-1 bg-pink-300/70 rounded-full animate-[pulse_3s_ease-in-out_infinite]"></div>
+          <div className="absolute bottom-12 left-20 w-1.5 h-1.5 bg-white/60 rounded-full animate-[pulse_2.5s_ease-in-out_infinite]"></div>
+          <div className="absolute bottom-20 right-12 w-1 h-1 bg-yellow-200/60 rounded-full animate-[pulse_3.5s_ease-in-out_infinite]"></div>
+          <div className="absolute top-32 left-32 w-1 h-1 bg-pink-400/50 rounded-full animate-[pulse_4s_ease-in-out_infinite]"></div>
+          <div className="absolute top-24 right-32 w-1.5 h-1.5 bg-white/40 rounded-full animate-[pulse_2.8s_ease-in-out_infinite]"></div>
           
           <div className="text-center relative z-10">
             {/* Stacked headline - no animation */}
@@ -59,10 +62,22 @@ const Hero = () => {
               by LinguaGlee
             </p>
             
-            {/* New two-line tagline with updated font */}
-            <div className="font-poppins text-xl md:text-2xl font-light text-white mb-12 leading-relaxed max-w-4xl mx-auto drop-shadow-lg text-center tracking-wide">
-              <p className="mb-2">One unforgettable hour.</p>
-              <p>English. Confidence. Sparkle. Sisterhood.</p>
+            {/* Glamorous glowing tagline */}
+            <div className="relative font-poppins text-xl md:text-2xl font-light text-white mb-12 leading-relaxed max-w-4xl mx-auto text-center tracking-wide">
+              {/* Multiple glow layers for dramatic effect */}
+              <div className="absolute inset-0 text-xl md:text-2xl font-light text-pink-300 blur-sm opacity-70 animate-glow">
+                <p className="mb-2">One unforgettable hour.</p>
+                <p>English. Confidence. Sparkle. Sisterhood.</p>
+              </div>
+              <div className="absolute inset-0 text-xl md:text-2xl font-light text-white blur-xs opacity-60 animate-pulse">
+                <p className="mb-2">One unforgettable hour.</p>
+                <p>English. Confidence. Sparkle. Sisterhood.</p>
+              </div>
+              {/* Main text with sparkle effect */}
+              <div className="relative z-10 drop-shadow-2xl text-shadow-glow animate-sparkle-text">
+                <p className="mb-2">One unforgettable hour.</p>
+                <p>English. Confidence. Sparkle. Sisterhood.</p>
+              </div>
             </div>
             
             {/* Updated CTA Button */}
