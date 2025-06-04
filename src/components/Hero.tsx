@@ -11,8 +11,8 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-      {/* Background image - glamorous women at party */}
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/d2b8b167-1f86-440e-970d-5e3ac94df1fb.png')] bg-cover bg-[center_top_-100px]"></div>
+      {/* Background image - colorful and energetic */}
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center"></div>
       
       {/* Simple gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-pink-500/30 via-purple-400/20 to-yellow-400/25"></div>
