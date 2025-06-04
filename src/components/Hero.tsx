@@ -27,12 +27,12 @@ const Hero = () => {
         />
       </div>
 
-      {/* Reduced opacity glass panel */}
-      <div className="absolute inset-0 flex items-center justify-center z-5">
-        <div className="relative backdrop-blur-sm bg-gradient-to-br from-white/8 via-pink-100/3 to-purple-100/5 max-w-7xl mx-8 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+      {/* Reduced opacity glass panel - moved down */}
+      <div className="absolute inset-0 flex items-start justify-center z-5 pt-32">
+        <div className="relative backdrop-blur-sm bg-gradient-to-br from-white/15 via-pink-100/8 to-purple-100/12 max-w-7xl mx-8 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] mt-16">
           {/* Subtle glass reflections */}
-          <div className="absolute inset-0 bg-gradient-to-br from-white/12 via-transparent to-pink-200/8 rounded-3xl"></div>
-          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/8 to-transparent rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-pink-200/5 rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent rounded-3xl"></div>
           
           <div className="text-center relative z-10 p-24 md:p-32">
             {/* Fashion-forward headline with Playfair Display */}
