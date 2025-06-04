@@ -65,7 +65,8 @@ export default {
 				},
 				'linguaglee-pink': '#e49dc2',
 				'linguaglee-gold': '#f4d03f',
-				'linguaglee-lavender': '#e8d5e8'
+				'linguaglee-lavender': '#e8d5e8',
+				'gold': '#ffd700'
 			},
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],

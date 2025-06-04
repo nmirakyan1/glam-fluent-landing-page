@@ -30,17 +30,22 @@ const Hero = () => {
         />
       </div>
 
-      {/* Glass panel with enhanced blur and glow effects */}
+      {/* Ultra-glamorous glass panel with enhanced transparency and luxury effects */}
       <div className="absolute inset-0 flex items-center justify-center z-5">
-        <div className="relative backdrop-blur-md bg-gradient-to-br from-white/15 via-white/8 to-pink-100/15 max-w-7xl mx-8 rounded-3xl shadow-2xl border border-white/30">
-          {/* Enhanced glass reflections */}
-          <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-pink-200/20 rounded-3xl"></div>
-          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent rounded-3xl"></div>
-          <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-pink-300/10 to-transparent rounded-3xl"></div>
+        <div className="relative backdrop-blur-sm bg-gradient-to-br from-white/8 via-white/3 to-pink-100/8 max-w-7xl mx-8 rounded-3xl shadow-[0_8px_32px_rgba(31,38,135,0.37)] border border-white/20">
+          {/* Multiple luxury glass reflections for ultra-glam effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-pink-200/10 rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/8 to-transparent rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-pink-300/5 to-transparent rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-tl from-transparent via-blue-200/5 to-transparent rounded-3xl"></div>
           
-          {/* Subtle light effects */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-400/20 to-transparent animate-[shimmer_6s_ease-in-out_infinite] opacity-70 rounded-3xl"></div>
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-blue-300/15 to-transparent animate-[shimmer_8s_ease-in-out_infinite] opacity-60 rounded-3xl"></div>
+          {/* Luxurious shimmer effects - Sex and the City style */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-400/15 to-transparent animate-[shimmer_8s_ease-in-out_infinite] opacity-60 rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/10 to-transparent animate-[shimmer_12s_ease-in-out_infinite] opacity-40 rounded-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-gold/10 to-transparent animate-[shimmer_10s_ease-in-out_infinite] opacity-50 rounded-3xl"></div>
+          
+          {/* Dreamy glow border effect */}
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-pink-300/20 via-white/30 to-pink-300/20 blur-sm opacity-60"></div>
           
           <div className="text-center relative z-10 p-24 md:p-32">
             {/* Stacked headline - no animation */}
@@ -52,7 +57,7 @@ const Hero = () => {
             </div>
             
             {/* Subheading - refined styling with more bold text */}
-            <p className="font-montserrat text-base md:text-lg text-white mb-10 font-extrabold tracking-[0.2em] uppercase drop-shadow-lg">
+            <p className="font-montserrat text-base md:text-lg text-white mb-10 font-black tracking-[0.3em] uppercase drop-shadow-2xl">
               by LinguaGlee
             </p>
             
