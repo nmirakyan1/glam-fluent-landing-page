@@ -6,8 +6,8 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-              alt="Elegant rooftop setting with notebook and coffee" 
+              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              alt="Stylish woman with laptop in an elegant setting" 
               className="rounded-lg shadow-2xl w-full h-96 object-cover"
             />
           </div>
