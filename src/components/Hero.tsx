@@ -42,12 +42,6 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-pink-300/8 to-transparent rounded-3xl"></div>
           <div className="absolute inset-0 bg-gradient-to-tl from-transparent via-purple-200/6 to-transparent rounded-3xl"></div>
           
-          {/* Movie-level shimmer effects with staggered timing */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-400/20 to-transparent animate-[shimmer_6s_ease-in-out_infinite] opacity-70 rounded-3xl"></div>
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/15 to-transparent animate-[shimmer_8s_ease-in-out_infinite] opacity-50 rounded-3xl"></div>
-          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-gold/12 to-transparent animate-[shimmer_10s_ease-in-out_infinite] opacity-60 rounded-3xl"></div>
-          <div className="absolute inset-0 bg-gradient-to-tl from-transparent via-purple-300/8 to-transparent animate-[shimmer_12s_ease-in-out_infinite] opacity-40 rounded-3xl"></div>
-          
           {/* Dramatic glow border effect for movie glamour */}
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-pink-400/25 via-white/35 to-purple-400/25 blur-md opacity-70 animate-pulse"></div>
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-l from-gold/20 via-pink-300/25 to-gold/20 blur-lg opacity-50 animate-[glow_4s_ease-in-out_infinite]"></div>
