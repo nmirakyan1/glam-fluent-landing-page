@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -122,6 +121,24 @@ export default {
 						transform: 'scale(1.05)'
 					}
 				},
+				'twinkle': {
+					'0%, 100%': {
+						opacity: '0.3',
+						transform: 'scale(1) rotate(0deg)'
+					},
+					'25%': {
+						opacity: '0.8',
+						transform: 'scale(1.2) rotate(90deg)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.5) rotate(180deg)'
+					},
+					'75%': {
+						opacity: '0.6',
+						transform: 'scale(1.1) rotate(270deg)'
+					}
+				},
 				'shimmer': {
 					'0%': {
 						transform: 'translateX(-100%)'
@@ -139,7 +156,7 @@ export default {
 						opacity: '0.8'
 					},
 					'50%': {
-						textShadow: '0 0 10px rgba(236, 43, 141, 0.8), 0 0 20px rgba(236, 43, 141, 0.6), 0 0 30px rgba(236, 43, 141, 0.4)',
+						textShadow: '0 0 20px rgba(236, 43, 141, 1), 0 0 30px rgba(236, 43, 141, 0.8), 0 0 40px rgba(236, 43, 141, 0.6)',
 						opacity: '1'
 					}
 				},
@@ -149,8 +166,8 @@ export default {
 						transform: 'scale(1)'
 					},
 					'50%': {
-						textShadow: '0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(236, 43, 141, 0.6), 0 0 30px rgba(236, 43, 141, 0.4)',
-						transform: 'scale(1.02)'
+						textShadow: '0 0 15px rgba(255, 255, 255, 1), 0 0 25px rgba(236, 43, 141, 0.8), 0 0 35px rgba(255, 215, 0, 0.6)',
+						transform: 'scale(1.03)'
 					}
 				}
 			},
@@ -159,6 +176,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'sparkle': 'sparkle 3s ease-in-out infinite',
+				'twinkle': 'twinkle 4s ease-in-out infinite',
 				'shimmer': 'shimmer 4s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite',
 				'sparkle-text': 'sparkle-text 3s ease-in-out infinite'
