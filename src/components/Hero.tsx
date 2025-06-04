@@ -30,20 +30,20 @@ const Hero = () => {
         />
       </div>
 
-      {/* Glass panel without border */}
+      {/* Bigger glass panel without border */}
       <div className="absolute inset-0 flex items-center justify-center z-5">
-        <div className="backdrop-blur-[2px] bg-white/3 rounded-3xl p-16 max-w-5xl mx-4 shadow-2xl">
+        <div className="backdrop-blur-[2px] bg-white/3 rounded-3xl p-20 max-w-6xl mx-4 shadow-2xl">
           <div className="text-center">
             {/* Stacked headline - no animation */}
             <div className="relative mb-6">
-              <h1 className="font-playfair font-black text-white mb-2 drop-shadow-2xl leading-none">
+              <h1 className="font-poppins font-black text-white mb-2 drop-shadow-2xl leading-none">
                 <span className="block text-6xl md:text-8xl tracking-tight">One Hour</span>
                 <span className="block text-6xl md:text-8xl tracking-tight text-[#cc0a65] italic">of Girl Power</span>
               </h1>
             </div>
             
             {/* Subheading - refined styling */}
-            <p className="font-montserrat text-sm md:text-base text-[#e49dc2] mb-8 font-light tracking-[0.3em] uppercase">
+            <p className="font-montserrat text-sm md:text-base text-[#cc0a65] mb-8 font-light tracking-[0.3em] uppercase">
               by LinguaGlee
             </p>
             
