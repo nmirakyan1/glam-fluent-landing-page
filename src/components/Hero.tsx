@@ -21,12 +21,12 @@ const Hero = () => {
       {/* Subtle sparkle overlay with animation */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_75%,_rgba(236,43,141,0.1),_transparent_50%),radial-gradient(circle_at_75%_25%,_rgba(156,15,103,0.1),_transparent_50%),radial-gradient(circle_at_50%_50%,_rgba(255,255,255,0.03),_transparent_50%)] animate-sparkle"></div>
       
-      {/* Logo - top left - made larger by 40% */}
+      {/* Logo - top left - made significantly larger */}
       <div className="absolute top-8 left-8 z-10">
         <img 
           src="/lovable-uploads/86a23508-a906-474a-a3a7-9f2b4eb948f3.png" 
           alt="LinguaGlee Logo" 
-          className="h-20 w-auto drop-shadow-2xl opacity-90 filter drop-shadow-xl"
+          className="h-32 w-auto drop-shadow-2xl opacity-90 filter drop-shadow-xl"
         />
       </div>
 
