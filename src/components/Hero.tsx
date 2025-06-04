@@ -24,12 +24,12 @@ const Hero = () => {
       {/* Additional floating sparkles for movie magic */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_rgba(255,255,255,0.6)_1px,_transparent_1px),radial-gradient(circle_at_70%_70%,_rgba(236,43,141,0.4)_1px,_transparent_1px),radial-gradient(circle_at_50%_20%,_rgba(255,215,0,0.5)_1px,_transparent_1px)] animate-[twinkle_4s_ease-in-out_infinite] opacity-80"></div>
       
-      {/* Logo - top left - made significantly larger */}
+      {/* Logo - top left - made much larger */}
       <div className="absolute top-8 left-8 z-10">
         <img 
           src="/lovable-uploads/86a23508-a906-474a-a3a7-9f2b4eb948f3.png" 
           alt="LinguaGlee Logo" 
-          className="h-32 w-auto drop-shadow-2xl opacity-90 filter drop-shadow-xl animate-[glow_3s_ease-in-out_infinite]"
+          className="h-48 w-auto drop-shadow-2xl opacity-90 filter drop-shadow-xl animate-[glow_3s_ease-in-out_infinite]"
         />
       </div>
 
