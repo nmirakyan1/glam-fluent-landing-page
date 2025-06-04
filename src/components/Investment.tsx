@@ -10,36 +10,42 @@ const Investment = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-linguaglee-pink/10 to-linguaglee-lavender/20">
+    <section className="py-20 bg-gradient-to-br from-linguaglee-pink/15 to-linguaglee-lavender/25">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mb-12">
           Your Transformation Investment
         </h2>
         
-        <div className="max-w-2xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
-          <p className="font-montserrat text-xl text-gray-700 mb-6">
+        <div className="max-w-2xl mx-auto bg-white/90 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border-4 border-white/50">
+          <p className="font-montserrat text-2xl text-gray-700 mb-8">
             The full Fluent & Fabulous experience is just:
           </p>
           
-          <div className="text-6xl font-playfair font-bold text-linguaglee-pink mb-6">
+          <div className="text-8xl font-playfair font-bold text-linguaglee-pink mb-8 drop-shadow-lg">
             $400
           </div>
           
-          <p className="font-montserrat text-gray-600 mb-8 italic">
-            (Includes all 8 sessions, workbook, support group, and certificate)
-          </p>
-          
-          <div className="bg-linguaglee-lavender/20 rounded-lg p-4 mb-8">
-            <p className="font-montserrat text-gray-700 font-medium">
-              Payment plan available: 2 × $200
-            </p>
+          <div className="space-y-4 mb-12">
+            <div className="bg-linguaglee-lavender/30 rounded-2xl p-6">
+              <p className="font-montserrat text-gray-700 font-medium text-lg flex items-center justify-center">
+                <span className="text-2xl mr-3">💳</span>
+                Payment plan: 2 payments of $200
+              </p>
+            </div>
+            
+            <div className="bg-linguaglee-pink/20 rounded-2xl p-6">
+              <p className="font-montserrat text-gray-700 font-medium text-lg flex items-center justify-center">
+                <span className="text-2xl mr-3">🧠</span>
+                Spots are limited to 4 per group
+              </p>
+            </div>
           </div>
           
           <Button 
             onClick={scrollToForm}
-            className="bg-linguaglee-pink hover:bg-linguaglee-pink/90 text-white font-montserrat font-semibold px-12 py-4 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-gradient-to-r from-linguaglee-pink to-linguaglee-pink/80 hover:from-linguaglee-pink/90 hover:to-linguaglee-pink/70 text-white font-montserrat font-bold px-16 py-6 text-2xl rounded-full shadow-2xl hover:shadow-pink-300/50 transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
           >
-            Reserve My Spot Now
+            Yes, I Want This! ✨
           </Button>
         </div>
       </div>

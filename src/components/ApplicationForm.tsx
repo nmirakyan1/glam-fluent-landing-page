@@ -11,8 +11,7 @@ const ApplicationForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     fullName: '',
-    email: '',
-    whatsapp: '',
+    contact: '',
     motivation: '',
     agreement: false
   });
@@ -22,25 +21,24 @@ const ApplicationForm = () => {
     
     if (!formData.agreement) {
       toast({
-        title: "Please confirm your understanding",
-        description: "You need to check the agreement box before submitting.",
+        title: "Please confirm you're ready! ✨",
+        description: "Check the box to confirm you're ready for this fabulous journey.",
         variant: "destructive"
       });
       return;
     }
 
-    console.log('Form submitted:', formData);
+    console.log('Application submitted:', formData);
     
     toast({
-      title: "Application Submitted! ✨",
-      description: "Thank you! We'll be in touch within 24 hours to confirm your spot.",
+      title: "Application Submitted! 🎉",
+      description: "Gorgeous! We'll be in touch within 24 hours to confirm your spot. Get ready to glow up! ✨",
     });
 
     // Reset form
     setFormData({
       fullName: '',
-      email: '',
-      whatsapp: '',
+      contact: '',
       motivation: '',
       agreement: false
     });
@@ -58,14 +56,18 @@ const ApplicationForm = () => {
     <section id="application-form" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12">
-            Apply Now
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 text-center mb-8">
+            Ready to glow up your English? ✨
           </h2>
           
-          <form onSubmit={handleSubmit} className="space-y-6 bg-gradient-to-br from-linguaglee-pink/5 to-linguaglee-lavender/5 p-8 rounded-2xl shadow-lg">
+          <p className="font-montserrat text-xl text-gray-600 text-center mb-12">
+            Let's make this happen, gorgeous!
+          </p>
+          
+          <form onSubmit={handleSubmit} className="space-y-8 bg-gradient-to-br from-linguaglee-pink/10 to-linguaglee-lavender/10 p-10 rounded-3xl shadow-2xl border-4 border-white/50">
             <div>
-              <Label htmlFor="fullName" className="font-montserrat font-medium text-gray-700">
-                Full Name *
+              <Label htmlFor="fullName" className="font-montserrat font-semibold text-gray-800 text-lg">
+                Name ✨
               </Label>
               <Input
                 id="fullName"
@@ -74,44 +76,30 @@ const ApplicationForm = () => {
                 required
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className="mt-2 border-linguaglee-pink/30 focus:border-linguaglee-pink"
+                className="mt-3 border-2 border-linguaglee-pink/50 focus:border-linguaglee-pink rounded-xl py-3 text-lg"
+                placeholder="Your gorgeous name"
               />
             </div>
             
             <div>
-              <Label htmlFor="email" className="font-montserrat font-medium text-gray-700">
-                Email *
+              <Label htmlFor="contact" className="font-montserrat font-semibold text-gray-800 text-lg">
+                WhatsApp or Email 💌
               </Label>
               <Input
-                id="email"
-                name="email"
-                type="email"
+                id="contact"
+                name="contact"
+                type="text"
                 required
-                value={formData.email}
+                value={formData.contact}
                 onChange={handleInputChange}
-                className="mt-2 border-linguaglee-pink/30 focus:border-linguaglee-pink"
+                className="mt-3 border-2 border-linguaglee-pink/50 focus:border-linguaglee-pink rounded-xl py-3 text-lg"
+                placeholder="How can we reach you?"
               />
             </div>
             
             <div>
-              <Label htmlFor="whatsapp" className="font-montserrat font-medium text-gray-700">
-                WhatsApp Number *
-              </Label>
-              <Input
-                id="whatsapp"
-                name="whatsapp"
-                type="tel"
-                required
-                value={formData.whatsapp}
-                onChange={handleInputChange}
-                className="mt-2 border-linguaglee-pink/30 focus:border-linguaglee-pink"
-                placeholder="+1 (555) 123-4567"
-              />
-            </div>
-            
-            <div>
-              <Label htmlFor="motivation" className="font-montserrat font-medium text-gray-700">
-                Why are you interested in this course? *
+              <Label htmlFor="motivation" className="font-montserrat font-semibold text-gray-800 text-lg">
+                Why do you want to join? 💫
               </Label>
               <Textarea
                 id="motivation"
@@ -119,30 +107,33 @@ const ApplicationForm = () => {
                 required
                 value={formData.motivation}
                 onChange={handleInputChange}
-                className="mt-2 border-linguaglee-pink/30 focus:border-linguaglee-pink min-h-[100px]"
-                placeholder="Share what draws you to this experience..."
+                className="mt-3 border-2 border-linguaglee-pink/50 focus:border-linguaglee-pink min-h-[120px] rounded-xl text-lg"
+                placeholder="Tell us what's calling you to this experience..."
               />
             </div>
             
-            <div className="flex items-start space-x-3">
+            <div className="flex items-start space-x-4 bg-white/70 p-6 rounded-2xl">
               <Checkbox
                 id="agreement"
                 checked={formData.agreement}
                 onCheckedChange={(checked) => 
                   setFormData(prev => ({ ...prev, agreement: checked as boolean }))
                 }
-                className="mt-1 border-linguaglee-pink/50 data-[state=checked]:bg-linguaglee-pink"
+                className="mt-1 border-2 border-linguaglee-pink/70 data-[state=checked]:bg-linguaglee-pink w-5 h-5"
               />
-              <Label htmlFor="agreement" className="font-montserrat text-sm text-gray-700 leading-relaxed">
-                I understand this is a $400 experience and spots are limited. I'm ready to commit to the full 8-session journey.
+              <Label htmlFor="agreement" className="font-montserrat text-lg text-gray-700 leading-relaxed">
+                I'm ready for the $400 journey 🛍️ <br />
+                <span className="text-sm italic text-gray-600">
+                  (And I understand spots are limited because this is exclusive!)
+                </span>
               </Label>
             </div>
             
             <Button 
               type="submit"
-              className="w-full bg-linguaglee-pink hover:bg-linguaglee-pink/90 text-white font-montserrat font-semibold py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="w-full bg-gradient-to-r from-linguaglee-pink to-linguaglee-pink/80 hover:from-linguaglee-pink/90 hover:to-linguaglee-pink/70 text-white font-montserrat font-bold py-6 text-2xl rounded-full shadow-2xl hover:shadow-pink-300/50 transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
             >
-              Apply Now
+              Apply Now ✨
             </Button>
           </form>
         </div>
