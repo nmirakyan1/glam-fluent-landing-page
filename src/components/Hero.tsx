@@ -30,23 +30,19 @@ const Hero = () => {
         />
       </div>
 
-      {/* Sparkly glass panel - made even bigger */}
+      {/* Refined elegant glass panel */}
       <div className="absolute inset-0 flex items-center justify-center z-5">
-        <div className="relative backdrop-blur-[3px] bg-gradient-to-br from-white/8 via-white/3 to-white/6 rounded-3xl p-24 max-w-7xl mx-4 shadow-2xl border border-white/10">
-          {/* Enhanced sparkle layers inside the glass */}
-          <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.2),_transparent_40%),radial-gradient(circle_at_80%_80%,_rgba(236,43,141,0.15),_transparent_40%),radial-gradient(circle_at_60%_40%,_rgba(255,255,255,0.12),_transparent_30%),radial-gradient(circle_at_40%_80%,_rgba(255,215,0,0.1),_transparent_35%)] animate-sparkle"></div>
+        <div className="relative backdrop-blur-sm bg-gradient-to-br from-white/10 via-white/5 to-pink-100/10 rounded-2xl p-16 md:p-24 max-w-6xl mx-4 shadow-xl border border-white/20">
+          {/* Subtle inner glow */}
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-pink-400/5 via-transparent to-yellow-300/5"></div>
           
-          {/* Enhanced shimmer effect */}
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/8 to-transparent animate-[shimmer_3s_ease-in-out_infinite] opacity-80"></div>
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-l from-transparent via-pink-300/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite_reverse] opacity-60"></div>
+          {/* Gentle shimmer effect */}
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite] opacity-60"></div>
           
-          {/* More floating sparkles */}
-          <div className="absolute top-8 left-12 w-2 h-2 bg-white/50 rounded-full animate-[pulse_2s_ease-in-out_infinite]"></div>
-          <div className="absolute top-16 right-16 w-1 h-1 bg-pink-300/70 rounded-full animate-[pulse_3s_ease-in-out_infinite]"></div>
-          <div className="absolute bottom-12 left-20 w-1.5 h-1.5 bg-white/60 rounded-full animate-[pulse_2.5s_ease-in-out_infinite]"></div>
-          <div className="absolute bottom-20 right-12 w-1 h-1 bg-yellow-200/60 rounded-full animate-[pulse_3.5s_ease-in-out_infinite]"></div>
-          <div className="absolute top-32 left-32 w-1 h-1 bg-pink-400/50 rounded-full animate-[pulse_4s_ease-in-out_infinite]"></div>
-          <div className="absolute top-24 right-32 w-1.5 h-1.5 bg-white/40 rounded-full animate-[pulse_2.8s_ease-in-out_infinite]"></div>
+          {/* Minimal floating sparkles */}
+          <div className="absolute top-12 right-16 w-1 h-1 bg-white/40 rounded-full animate-[pulse_3s_ease-in-out_infinite]"></div>
+          <div className="absolute bottom-16 left-20 w-1 h-1 bg-pink-300/30 rounded-full animate-[pulse_4s_ease-in-out_infinite]"></div>
+          <div className="absolute top-20 left-1/3 w-0.5 h-0.5 bg-white/30 rounded-full animate-[pulse_2.5s_ease-in-out_infinite]"></div>
           
           <div className="text-center relative z-10">
             {/* Stacked headline - no animation */}
