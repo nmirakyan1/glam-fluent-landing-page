@@ -53,8 +53,8 @@ const Hero = () => {
               </h1>
             </div>
             
-            {/* Subheading - refined styling */}
-            <p className="font-montserrat text-sm md:text-base text-[#cc0a65] mb-10 font-light tracking-[0.3em] uppercase">
+            {/* Subheading - refined styling with more bold text */}
+            <p className="font-montserrat text-base md:text-lg text-white mb-10 font-bold tracking-[0.2em] uppercase drop-shadow-lg">
               by LinguaGlee
             </p>
             
