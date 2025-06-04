@@ -30,10 +30,22 @@ const Hero = () => {
         />
       </div>
 
-      {/* Bigger glass panel without border */}
+      {/* Sparkly glass panel */}
       <div className="absolute inset-0 flex items-center justify-center z-5">
-        <div className="backdrop-blur-[2px] bg-white/3 rounded-3xl p-20 max-w-6xl mx-4 shadow-2xl">
-          <div className="text-center">
+        <div className="relative backdrop-blur-[3px] bg-gradient-to-br from-white/8 via-white/3 to-white/6 rounded-3xl p-20 max-w-6xl mx-4 shadow-2xl border border-white/10">
+          {/* Additional sparkle layers inside the glass */}
+          <div className="absolute inset-0 rounded-3xl bg-[radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.15),_transparent_40%),radial-gradient(circle_at_80%_80%,_rgba(236,43,141,0.1),_transparent_40%),radial-gradient(circle_at_60%_40%,_rgba(255,255,255,0.08),_transparent_30%)] animate-sparkle"></div>
+          
+          {/* Shimmer effect */}
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/5 to-transparent animate-[shimmer_4s_ease-in-out_infinite] opacity-60"></div>
+          
+          {/* Floating sparkles */}
+          <div className="absolute top-8 left-12 w-2 h-2 bg-white/40 rounded-full animate-[pulse_2s_ease-in-out_infinite]"></div>
+          <div className="absolute top-16 right-16 w-1 h-1 bg-pink-300/60 rounded-full animate-[pulse_3s_ease-in-out_infinite]"></div>
+          <div className="absolute bottom-12 left-20 w-1.5 h-1.5 bg-white/50 rounded-full animate-[pulse_2.5s_ease-in-out_infinite]"></div>
+          <div className="absolute bottom-20 right-12 w-1 h-1 bg-yellow-200/50 rounded-full animate-[pulse_3.5s_ease-in-out_infinite]"></div>
+          
+          <div className="text-center relative z-10">
             {/* Stacked headline - no animation */}
             <div className="relative mb-6">
               <h1 className="font-poppins font-black text-white mb-2 drop-shadow-2xl leading-none">

@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -114,13 +115,25 @@ export default {
 						opacity: '1',
 						transform: 'scale(1.05)'
 					}
+				},
+				'shimmer': {
+					'0%': {
+						transform: 'translateX(-100%)'
+					},
+					'50%': {
+						transform: 'translateX(100%)'
+					},
+					'100%': {
+						transform: 'translateX(100%)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'sparkle': 'sparkle 3s ease-in-out infinite'
+				'sparkle': 'sparkle 3s ease-in-out infinite',
+				'shimmer': 'shimmer 4s ease-in-out infinite'
 			}
 		}
 	},
