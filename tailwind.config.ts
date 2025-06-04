@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -150,6 +151,24 @@ export default {
 						textShadow: '0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(236, 43, 141, 0.6), 0 0 30px rgba(236, 43, 141, 0.4)',
 						transform: 'scale(1.02)'
 					}
+				},
+				'diamond-refract': {
+					'0%, 100%': {
+						filter: 'hue-rotate(0deg) brightness(1)',
+						transform: 'rotate(0deg)'
+					},
+					'25%': {
+						filter: 'hue-rotate(90deg) brightness(1.2)',
+						transform: 'rotate(1deg)'
+					},
+					'50%': {
+						filter: 'hue-rotate(180deg) brightness(0.9)',
+						transform: 'rotate(0deg)'
+					},
+					'75%': {
+						filter: 'hue-rotate(270deg) brightness(1.1)',
+						transform: 'rotate(-1deg)'
+					}
 				}
 			},
 			animation: {
@@ -159,7 +178,8 @@ export default {
 				'sparkle': 'sparkle 3s ease-in-out infinite',
 				'shimmer': 'shimmer 4s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite',
-				'sparkle-text': 'sparkle-text 3s ease-in-out infinite'
+				'sparkle-text': 'sparkle-text 3s ease-in-out infinite',
+				'diamond-refract': 'diamond-refract 8s ease-in-out infinite'
 			}
 		}
 	},
@@ -169,6 +189,10 @@ export default {
 			const newUtilities = {
 				'.text-shadow-glow': {
 					textShadow: '0 0 10px rgba(236, 43, 141, 0.5), 0 0 20px rgba(236, 43, 141, 0.3), 0 0 30px rgba(236, 43, 141, 0.2)'
+				},
+				'.diamond-shape': {
+					clipPath: 'polygon(15% 0%, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0% 15%)',
+					position: 'relative'
 				}
 			}
 			addUtilities(newUtilities)
