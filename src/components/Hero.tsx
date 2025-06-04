@@ -91,9 +91,9 @@ const Hero = () => {
             {/* Movie-level CTA Button with ultimate glamour */}
             <Button 
               onClick={scrollToForm}
-              className="bg-gradient-to-r from-[#ec2b8d] via-[#d91a7a] to-[#9c0f67] hover:from-[#ff1493] hover:via-[#ec2b8d] hover:to-[#8b0864] text-white font-poppins font-bold px-16 py-8 text-xl rounded-full shadow-[0_0_50px_rgba(236,43,141,0.6),0_0_100px_rgba(236,43,141,0.3)] hover:shadow-[0_0_80px_rgba(236,43,141,0.8),0_0_150px_rgba(236,43,141,0.4)] transition-all duration-700 transform hover:scale-110 border-2 border-white/30 tracking-wide uppercase group animate-[glow_4s_ease-in-out_infinite]"
+              className="bg-gradient-to-r from-[#ec2b8d] via-[#d91a7a] to-[#9c0f67] hover:from-[#ff1493] hover:via-[#ec2b8d] hover:to-[#8b0864] text-white font-poppins font-bold px-16 py-8 text-xl rounded-full shadow-[0_0_50px_rgba(236,43,141,0.6),0_0_100px_rgba(236,43,141,0.3)] hover:shadow-[0_0_80px_rgba(236,43,141,0.8),0_0_150px_rgba(236,43,141,0.4)] transition-all duration-700 transform hover:scale-110 border-2 border-white/30 tracking-wide uppercase animate-[glow_4s_ease-in-out_infinite]"
             >
-              <span className="group-hover:animate-[sparkle_1s_ease-in-out_infinite] drop-shadow-lg">✨ Yes, I Want This Magic! ✨</span>
+              <span className="drop-shadow-lg">Yes, I Want This</span>
             </Button>
           </div>
         </div>
