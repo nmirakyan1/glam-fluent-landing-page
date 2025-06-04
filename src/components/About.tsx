@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-black via-purple-900/50 to-black">
+    <section className="py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="space-y-12">
@@ -10,43 +10,49 @@ const About = () => {
               <h2 className="font-playfair text-4xl md:text-5xl font-bold text-stone-100 leading-tight mb-4">
                 This Isn't Just English Class.
               </h2>
-              <h2 className="font-playfair text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent leading-tight">
-                It's Your Glow-Up Hour.
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold leading-tight">
+                It's Your{' '}
+                <span className="text-stone-100 relative">
+                  Glow-Up Hour
+                  <div className="absolute -bottom-2 left-0 right-0 h-[2px] bg-gradient-to-r from-gold via-gold to-transparent opacity-80"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-gold/20 to-transparent blur-lg"></div>
+                </span>
+                .
               </h2>
             </div>
 
             {/* Thin gold separator */}
             <div className="w-24 h-[1px] bg-gradient-to-r from-gold to-transparent"></div>
             
-            {/* Body copy */}
+            {/* Body copy with elegant spacing */}
             <div className="space-y-8">
-              <p className="font-playfair text-xl text-pink-200 leading-relaxed">
+              <p className="font-poppins text-xl text-pink-200 leading-relaxed font-light">
                 This is a rooftop moment made for women who want more —<br />
                 more fluency, more confidence, more joy, more sparkle.
               </p>
               
-              {/* Quote pull-style section */}
-              <div className="bg-black/40 backdrop-blur-sm border-l-4 border-pink-400 pl-8 py-6 space-y-3">
-                <p className="font-playfair text-lg text-stone-200 italic leading-relaxed">
+              {/* Negative statements with elegant line spacing */}
+              <div className="space-y-3">
+                <p className="font-playfair text-lg text-stone-300 italic leading-relaxed">
                   It's not grammar drills.
                 </p>
-                <p className="font-playfair text-lg text-stone-200 italic leading-relaxed">
+                <p className="font-playfair text-lg text-stone-300 italic leading-relaxed">
                   It's not textbooks.
                 </p>
-                <p className="font-playfair text-lg text-stone-200 italic leading-relaxed">
+                <p className="font-playfair text-lg text-stone-300 italic leading-relaxed">
                   It's not boring.
                 </p>
               </div>
 
               {/* Positive statements with dramatic stacking */}
-              <div className="space-y-4">
-                <p className="font-playfair text-xl text-white font-medium animate-fade-in">
+              <div className="space-y-4 pt-4">
+                <p className="font-poppins text-xl text-white font-light leading-relaxed">
                   It's real conversation.
                 </p>
-                <p className="font-playfair text-xl text-white font-medium animate-fade-in" style={{animationDelay: '0.2s'}}>
+                <p className="font-poppins text-xl text-white font-light leading-relaxed">
                   Real empowerment.
                 </p>
-                <p className="font-playfair text-xl bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent font-medium animate-fade-in" style={{animationDelay: '0.4s'}}>
+                <p className="font-poppins text-xl text-pink-200 font-light leading-relaxed">
                   And a stylish hour just for you.
                 </p>
               </div>
@@ -55,9 +61,9 @@ const About = () => {
           
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-              alt="Confident woman with style" 
-              className="rounded-none shadow-2xl w-full h-96 object-cover border border-pink-400/20"
+              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              alt="Women enjoying a glamorous moment together" 
+              className="rounded-none shadow-2xl w-full h-96 object-cover"
             />
           </div>
         </div>
