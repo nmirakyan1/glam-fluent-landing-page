@@ -18,7 +18,7 @@ const About = () => {
             {/* Main headline with Vogue magazine typography */}
             <div className="text-center">
               <h2 className="leading-[1.1] mb-16 tracking-wide">
-                <span className="block font-playfair text-7xl md:text-9xl font-bold text-white mb-4 tracking-wider">
+                <span className="block font-playfair text-7xl md:text-9xl font-bold text-black mb-4 tracking-wider">
                   One Hour
                 </span>
                 <span className="block font-playfair text-6xl md:text-8xl text-[#cc0a65] italic font-normal -mt-6 tracking-wide">
@@ -27,27 +27,27 @@ const About = () => {
               </h2>
               
               {/* BY LINGUAGLEE in caps */}
-              <p className="font-poppins text-sm md:text-base font-semibold text-white uppercase tracking-[0.2em] mt-8">
+              <p className="font-poppins text-sm md:text-base font-semibold text-black uppercase tracking-[0.2em] mt-8">
                 By Linguaglee
               </p>
             </div>
             
             {/* Carrie Bradshaw style text with luxe typography */}
             <div className="space-y-8 text-center">
-              <p className="font-poppins text-xl md:text-2xl text-white leading-[1.8] font-light tracking-wide max-w-2xl mx-auto">
+              <p className="font-poppins text-xl md:text-2xl text-black leading-[1.8] font-light tracking-wide max-w-2xl mx-auto">
                 I used to think confidence came from knowing all the answers.
               </p>
-              <p className="font-poppins text-xl md:text-2xl text-white leading-[1.8] font-light tracking-wide max-w-2xl mx-auto">
+              <p className="font-poppins text-xl md:text-2xl text-black leading-[1.8] font-light tracking-wide max-w-2xl mx-auto">
                 But maybe it comes from saying what you mean — in any language.
               </p>
             </div>
 
             {/* Elegant body text */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
-              <p className="font-poppins text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
+              <p className="font-poppins text-lg md:text-xl text-black font-light leading-relaxed tracking-wide">
                 You're not here to memorize verbs.
               </p>
-              <p className="font-poppins text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
+              <p className="font-poppins text-lg md:text-xl text-black font-light leading-relaxed tracking-wide">
                 You're here to be understood. To be magnetic. To be heard.
               </p>
             </div>
@@ -57,17 +57,17 @@ const About = () => {
               <p className="font-playfair text-xl md:text-2xl text-[#cc0a65] font-normal leading-[1.8] italic tracking-wide">
                 Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
               </p>
-              <p className="font-poppins text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide">
+              <p className="font-poppins text-lg md:text-xl text-black font-medium leading-relaxed tracking-wide">
                 Suddenly, English feels a lot like power.
               </p>
             </div>
 
             {/* Powerful closing with consistent typography */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
-              <p className="font-playfair text-xl md:text-2xl text-white font-medium leading-[1.8] tracking-wide">
+              <p className="font-playfair text-xl md:text-2xl text-black font-medium leading-[1.8] tracking-wide">
                 This isn't school. It's your spotlight.
               </p>
-              <p className="font-playfair text-xl md:text-2xl text-white font-medium leading-[1.8] tracking-wide">
+              <p className="font-playfair text-xl md:text-2xl text-black font-medium leading-[1.8] tracking-wide">
                 And it's calling your name.
               </p>
             </div>
