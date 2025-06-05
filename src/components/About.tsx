@@ -1,3 +1,4 @@
+
 const About = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
@@ -44,31 +45,35 @@ const About = () => {
               </blockquote>
             </div>
 
-            {/* Magazine body text in columns */}
+            {/* Magazine body text in columns with improved line height */}
             <div className="grid md:grid-cols-2 gap-8 text-justify">
-              <div className="space-y-4">
-                <p className="font-poppins text-base text-black leading-relaxed">
-                  You're not here to memorize verbs. You're here to be understood. To be magnetic. To be heard.
+              <div className="space-y-6">
+                <p className="font-poppins text-base text-black leading-[1.8]">
+                  You're not here to memorize verbs. You're here to be understood. <em className="text-[#cc0a65]">To be magnetic. To be heard.</em>
                 </p>
-                <p className="font-poppins text-base text-black leading-relaxed">
+                <p className="font-poppins text-base text-black leading-[1.8]">
                   Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
                 </p>
               </div>
-              <div className="space-y-4">
-                <p className="font-poppins text-base text-black leading-relaxed">
+              <div className="space-y-6">
+                <p className="font-poppins text-base text-black leading-[1.8]">
                   Suddenly, English feels a lot like power. This isn't school. It's your spotlight.
                 </p>
-                <p className="font-poppins text-base text-black leading-relaxed font-medium">
+                <p className="font-poppins text-base text-black leading-[1.8] font-medium">
                   And it's calling your name.
                 </p>
               </div>
             </div>
 
-            {/* Vogue-style cover line */}
+            {/* Vogue-style cover line with pink glow */}
             <div className="text-center pt-8 border-t border-black">
-              <p className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] tracking-wide">
-                Welcome to One Hour of Girl Power
-              </p>
+              <div className="relative">
+                {/* Soft pink glow background */}
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-200/30 via-[#cc0a65]/20 to-pink-200/30 blur-xl rounded-lg"></div>
+                <p className="relative font-playfair text-4xl md:text-5xl font-bold text-[#cc0a65] tracking-wide py-4">
+                  Welcome to One Hour of Girl Power
+                </p>
+              </div>
               <p className="font-poppins text-sm uppercase tracking-[0.2em] text-black mt-4">
                 Inside: Your transformation begins
               </p>
