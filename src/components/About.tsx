@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
@@ -13,18 +14,6 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
           <div className="space-y-16 relative z-20">
-            {/* Updated masthead */}
-            <div className="text-center border-b border-black pb-8">
-              <h1 className="font-playfair text-6xl md:text-7xl font-normal text-black tracking-[0.2em] mb-2">
-                ONE HOUR
-              </h1>
-              <h2 className="font-playfair text-4xl md:text-5xl font-light text-[#cc0a65] italic mb-4">
-                of Girl Power
-              </h2>
-              <p className="font-poppins text-xs uppercase tracking-[0.4em] text-black">
-                THE NEW LANGUAGE OF CONFIDENCE
-              </p>
-            </div>
             
             {/* Cover story headline - Vogue style */}
             <div className="text-center space-y-6">
@@ -114,3 +103,4 @@ const About = () => {
 };
 
 export default About;
+
