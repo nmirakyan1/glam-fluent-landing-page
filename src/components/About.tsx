@@ -1,5 +1,3 @@
-
-
 const About = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
@@ -12,7 +10,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
-          <div className="space-y-12 relative z-20 mt-0">
+          <div className="space-y-12 relative z-20 -mt-4">
             
             {/* Cover story headline - Vogue style */}
             <div className="text-center space-y-6">
@@ -102,4 +100,3 @@ const About = () => {
 };
 
 export default About;
-
