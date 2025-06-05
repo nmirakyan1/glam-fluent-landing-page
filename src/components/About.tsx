@@ -15,14 +15,14 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/30 to-transparent md:bg-gradient-to-br md:from-white/70 md:via-white/40 md:to-transparent pointer-events-none z-10"></div>
           
           <div className="space-y-12 relative z-20">
-            {/* Cinematic Headline with more punch */}
+            {/* Main headline matching reference typography */}
             <div className="text-center">
-              <h2 className="font-playfair text-5xl md:text-7xl font-bold leading-[1.1] mb-12 tracking-wide">
-                <span className="block text-gray-800 mb-4">
-                  It's not just an English class,
+              <h2 className="leading-[1.1] mb-12 tracking-wide">
+                <span className="block font-playfair text-6xl md:text-8xl font-normal text-gray-800 mb-2">
+                  One Hour
                 </span>
-                <span className="block text-[#cc0a65]">
-                  It's your moment.
+                <span className="block font-allura text-5xl md:text-7xl text-[#cc0a65] italic font-normal -mt-4">
+                  of Girl Power
                 </span>
               </h2>
             </div>
@@ -37,7 +37,7 @@ const About = () => {
               </p>
             </div>
 
-            {/* Body text with DM Sans */}
+            {/* Body text with clean sans-serif */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
               <p className="text-lg md:text-xl text-gray-800 font-light leading-relaxed">
                 You're not here to memorize verbs.
