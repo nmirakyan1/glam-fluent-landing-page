@@ -2,7 +2,6 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import FearsSection from "@/components/FearsSection";
-import WhoItsFor from "@/components/WhoItsFor";
 import WhatYouGet from "@/components/WhatYouGet";
 import Investment from "@/components/Investment";
 import ApplicationForm from "@/components/ApplicationForm";
@@ -14,7 +13,6 @@ const Index = () => {
       <Hero />
       <About />
       <FearsSection />
-      <WhoItsFor />
       <WhatYouGet />
       <Investment />
       <ApplicationForm />
