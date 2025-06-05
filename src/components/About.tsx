@@ -13,6 +13,23 @@ const About = () => {
           
           <div className="space-y-12 relative z-20 mt-8">
             
+            {/* Cover story headline - Vogue style */}
+            <div className="text-center space-y-6">
+              <h2 className="font-playfair text-5xl md:text-7xl font-bold text-[#cc0a65] leading-[0.9] tracking-wide">
+                ONE HOUR
+              </h2>
+              <h3 className="font-playfair text-4xl md:text-6xl font-light text-black italic leading-[0.9] -mt-4">
+                of Girl Power
+              </h3>
+              
+              {/* Vogue-style subheading */}
+              <div className="border-t border-b border-black py-4 mt-8">
+                <p className="font-poppins text-sm uppercase tracking-[0.3em] text-black font-medium">
+                  The New Language of Confidence
+                </p>
+              </div>
+            </div>
+            
             {/* Magazine-style pull quotes */}
             <div className="space-y-12">
               <blockquote className="text-center border-l-4 border-[#cc0a65] pl-6 italic">
