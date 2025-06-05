@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section className="py-20 bg-black">
@@ -12,10 +13,10 @@ const About = () => {
               </h2>
               <h2 className="font-playfair text-4xl md:text-5xl font-bold leading-tight">
                 It's Your{' '}
-                <span className="text-stone-100 relative">
+                <span className="text-[#cc0a65] relative">
                   Glow-Up Hour
                   <div className="absolute -bottom-2 left-0 right-0 h-[2px] bg-gradient-to-r from-gold via-gold to-transparent opacity-80"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-gold/20 to-transparent blur-lg"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#cc0a65]/20 to-transparent blur-lg"></div>
                 </span>
                 .
               </h2>
@@ -61,8 +62,8 @@ const About = () => {
           
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-              alt="Women enjoying a glamorous moment together" 
+              src="/lovable-uploads/f7a700d7-8ca8-4702-90a5-fad681576404.png" 
+              alt="Glamorous women with colorful balloons and stylish sunglasses" 
               className="rounded-none shadow-2xl w-full h-96 object-cover"
             />
           </div>
@@ -73,3 +74,4 @@ const About = () => {
 };
 
 export default About;
+
