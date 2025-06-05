@@ -27,42 +27,42 @@ const About = () => {
               </h2>
               
               {/* BY LINGUAGLEE in caps */}
-              <p className="font-sans text-sm md:text-base font-semibold text-white uppercase tracking-[0.2em] mt-8">
+              <p className="font-poppins text-sm md:text-base font-semibold text-white uppercase tracking-[0.2em] mt-8">
                 By Linguaglee
               </p>
             </div>
             
-            {/* Subheadline with luxe spacing */}
+            {/* Carrie Bradshaw style text with luxe typography */}
             <div className="space-y-8 text-center">
-              <p className="font-sans text-xl md:text-2xl text-white leading-[1.8] font-normal tracking-wide max-w-2xl mx-auto">
+              <p className="font-poppins text-xl md:text-2xl text-white leading-[1.8] font-light tracking-wide max-w-2xl mx-auto">
                 I used to think confidence came from knowing all the answers.
               </p>
-              <p className="font-sans text-xl md:text-2xl text-white leading-[1.8] font-normal tracking-wide max-w-2xl mx-auto">
+              <p className="font-poppins text-xl md:text-2xl text-white leading-[1.8] font-light tracking-wide max-w-2xl mx-auto">
                 But maybe it comes from saying what you mean — in any language.
               </p>
             </div>
 
-            {/* Body text with clean sans-serif */}
+            {/* Elegant body text */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
-              <p className="font-sans text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
+              <p className="font-poppins text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
                 You're not here to memorize verbs.
               </p>
-              <p className="font-sans text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
+              <p className="font-poppins text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
                 You're here to be understood. To be magnetic. To be heard.
               </p>
             </div>
 
-            {/* Glamorous middle section */}
+            {/* Glamorous middle section with italic flair */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
               <p className="font-playfair text-xl md:text-2xl text-[#cc0a65] font-normal leading-[1.8] italic tracking-wide">
                 Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
               </p>
-              <p className="font-sans text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide">
+              <p className="font-poppins text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide">
                 Suddenly, English feels a lot like power.
               </p>
             </div>
 
-            {/* Powerful closing */}
+            {/* Powerful closing with consistent typography */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
               <p className="font-playfair text-xl md:text-2xl text-white font-medium leading-[1.8] tracking-wide">
                 This isn't school. It's your spotlight.
