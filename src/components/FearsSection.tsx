@@ -23,10 +23,10 @@ const FearsSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Glamorous headline */}
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-5xl md:text-7xl font-bold text-white leading-[0.9] tracking-wide mb-6">
-            What's stopping you 
+          <h2 className="font-playfair text-4xl md:text-6xl font-bold text-white leading-[1.1] tracking-wide mb-6">
+            You're not alone. 
             <br />
-            <span className="text-[#cc0a65]">from speaking up</span>
+            <span className="text-[#cc0a65] italic">These are the moments we're here to rewrite.</span>
           </h2>
           {/* Elegant divider */}
           <div className="w-32 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto"></div>
@@ -38,18 +38,18 @@ const FearsSection = () => {
             {/* Fear 1 */}
             <div className="backdrop-blur-sm bg-white/10 border border-white/20 rounded-lg p-8 hover:bg-white/15 transition-all duration-300">
               <p className="font-poppins text-white leading-[1.8]">
-                <span className="font-semibold text-lg">I understand everything — but freeze when it's my turn to speak.</span>
+                <span className="font-semibold text-lg">"I understand everything — but freeze when it's my turn to speak."</span>
                 <br />
-                <span className="text-pink-200">I'm scared I'll say it wrong and everyone will notice.</span>
+                <span className="text-pink-200 italic">I worry I'll get it wrong, and everyone will notice.</span>
               </p>
             </div>
 
             {/* Fear 2 */}
             <div className="backdrop-blur-sm bg-white/10 border border-white/20 rounded-lg p-8 hover:bg-white/15 transition-all duration-300 md:mt-12">
               <p className="font-poppins text-white leading-[1.8]">
-                <span className="font-semibold text-lg">I stay quiet — even when I know exactly what I want to say.</span>
+                <span className="font-semibold text-lg">"I stay quiet, even when I know exactly what I want to say."</span>
                 <br />
-                <span className="text-pink-200">The words are in my head… but they don't come out.</span>
+                <span className="text-pink-200 italic">The words are in my head. But they don't come out.</span>
               </p>
             </div>
           </div>
@@ -58,18 +58,18 @@ const FearsSection = () => {
             {/* Fear 3 */}
             <div className="backdrop-blur-sm bg-white/10 border border-white/20 rounded-lg p-8 hover:bg-white/15 transition-all duration-300">
               <p className="font-poppins text-white leading-[1.8]">
-                <span className="font-semibold text-lg">I feel like a different person when I speak English.</span>
+                <span className="font-semibold text-lg">"I feel like a different version of myself when I speak English."</span>
                 <br />
-                <span className="text-pink-200">Like I've lost my real voice.</span>
+                <span className="text-pink-200 italic">Like I can't fully show up the way I want to.</span>
               </p>
             </div>
 
             {/* Fear 4 */}
             <div className="backdrop-blur-sm bg-white/10 border border-white/20 rounded-lg p-8 hover:bg-white/15 transition-all duration-300 md:mt-12">
               <p className="font-poppins text-white leading-[1.8]">
-                <span className="font-semibold text-lg">I avoid conversations because I don't trust my English.</span>
+                <span className="font-semibold text-lg">"I avoid conversations because I'm unsure how I'll sound."</span>
                 <br />
-                <span className="text-pink-200">I smile, nod, and shrink — just to get through it.</span>
+                <span className="text-pink-200 italic">So I smile, nod, and keep it short, even when I have more to say.</span>
               </p>
             </div>
           </div>
@@ -78,9 +78,9 @@ const FearsSection = () => {
           <div className="flex justify-center">
             <div className="backdrop-blur-sm bg-white/10 border border-gold/30 rounded-lg p-8 hover:bg-white/15 transition-all duration-300 max-w-2xl">
               <p className="font-poppins text-white leading-[1.8] text-center">
-                <span className="font-semibold text-lg">I've studied for years… but I still don't feel fluent.</span>
+                <span className="font-semibold text-lg">"I've studied for years… but I still don't feel fluent."</span>
                 <br />
-                <span className="text-pink-200">And I'm starting to wonder if I ever will.</span>
+                <span className="text-pink-200 italic">And I wonder what I'm missing.</span>
               </p>
             </div>
           </div>
