@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
@@ -9,38 +10,89 @@ const About = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+        <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
-          {/* Main heading */}
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] leading-[0.9] tracking-wide">
-            Welcome to One Hour of Girl Power
-          </h2>
-          
-          {/* Vogue-style subheading */}
-          <div className="border-t border-b border-black py-4">
-            <p className="font-poppins text-sm uppercase tracking-[0.3em] text-black font-medium">
-              Where confidence meets conversation
-            </p>
-          </div>
-          
-          {/* Main content */}
-          <div className="space-y-8 animate-fade-in">
-            <p className="font-playfair text-xl md:text-2xl text-black leading-[1.6] tracking-wide italic">
-              "This isn't about perfecting your grammar or memorizing vocabulary lists."
-            </p>
+          <div className="space-y-12 relative z-20 -mt-8">
             
-            <p className="font-poppins text-base md:text-lg text-black leading-[1.9] max-w-3xl mx-auto">
-              This is about finding your voice in English — the same powerful, authentic voice you have in your native language. 
-              It's about speaking with confidence, expressing your ideas clearly, and feeling completely yourself when you communicate in English.
-            </p>
+            {/* Cover story headline - Vogue style */}
+            <div className="text-center space-y-6">
+              <h2 className="font-playfair text-5xl md:text-7xl font-bold text-[#cc0a65] leading-[0.9] tracking-wide">
+                ONE HOUR
+              </h2>
+              <h3 className="font-playfair text-4xl md:text-6xl font-light text-black italic leading-[0.9] -mt-4">
+                of Girl Power
+              </h3>
+              
+              {/* Vogue-style subheading */}
+              <div className="border-t border-b border-black py-4 mt-8">
+                <p className="font-poppins text-sm uppercase tracking-[0.3em] text-black font-medium">
+                  The New Language of Confidence
+                </p>
+              </div>
+            </div>
             
-            <div className="pt-8">
-              <blockquote className="border-l-4 border-[#cc0a65] pl-6 italic">
-                <p className="font-playfair text-lg md:text-xl text-black leading-[1.6] tracking-wide">
-                  "Because you already have everything you need to be fluent. 
-                  You just need to unlock it."
+            {/* Magazine-style pull quotes */}
+            <div className="space-y-12">
+              <blockquote className="text-center border-l-4 border-[#cc0a65] pl-6 italic">
+                <p className="font-playfair text-2xl md:text-3xl text-black leading-[1.4] tracking-wide">
+                  "I used to think confidence came from knowing all the answers."
                 </p>
               </blockquote>
+              
+              <blockquote className="text-center border-l-4 border-gold pl-6 italic">
+                <p className="font-playfair text-2xl md:text-3xl text-black leading-[1.4] tracking-wide">
+                  "But maybe it comes from saying what you mean — in any language."
+                </p>
+              </blockquote>
+            </div>
+
+            {/* Magazine body text in columns with improved line height */}
+            <div className="grid md:grid-cols-2 gap-8 text-justify">
+              <div className="space-y-6">
+                <p className="font-poppins text-base text-black leading-[1.8]">
+                  You're not here to memorize verbs. You're here to be understood. <em className="text-[#cc0a65]">To be magnetic. To be heard.</em>
+                </p>
+                <p className="font-poppins text-base text-black leading-[1.8]">
+                  Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
+                </p>
+              </div>
+              <div className="space-y-6">
+                <p className="font-poppins text-base text-black leading-[1.8]">
+                  Suddenly, English feels a lot like power. This isn't school. It's your spotlight.
+                </p>
+                <p className="font-poppins text-base text-black leading-[1.8] font-medium">
+                  And it's calling your name.
+                </p>
+              </div>
+            </div>
+
+            {/* Vogue-style cover line without glow */}
+            <div className="text-center pt-8 border-t border-black">
+              <p className="font-playfair text-4xl md:text-5xl font-bold text-[#cc0a65] tracking-wide">
+                Welcome to One Hour of Girl Power
+              </p>
+              <p className="font-poppins text-sm uppercase tracking-[0.2em] text-black mt-4">
+                Inside: Your transformation begins
+              </p>
+            </div>
+          </div>
+          
+          <div className="relative z-10">
+            {/* Fashion magazine style image treatment */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-[#cc0a65]/10 via-gold/5 to-pink-400/10 blur-lg"></div>
+              <img 
+                src="/lovable-uploads/f7a700d7-8ca8-4702-90a5-fad681576404.png" 
+                alt="Glamorous women with colorful balloons and stylish sunglasses" 
+                className="relative z-10 w-full h-auto object-cover shadow-2xl transform hover:scale-105 transition-transform duration-700"
+              />
+              
+              {/* Magazine-style image caption */}
+              <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-4">
+                <p className="font-poppins text-xs uppercase tracking-wide text-black">
+                  POWER PLAYERS: The new generation of confident women speaking their truth
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -50,3 +102,4 @@ const About = () => {
 };
 
 export default About;
+
