@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <section className="py-12 bg-white relative overflow-hidden">
+    <section className="py-16 bg-white relative overflow-hidden">
       {/* Subtle sparkle effects */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#cc0a65] rounded-full animate-twinkle"></div>
@@ -11,7 +11,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
-          <div className="space-y-16 relative z-20">
+          <div className="space-y-12 relative z-20 mt-8">
             
             {/* Magazine-style pull quotes */}
             <div className="space-y-12">
