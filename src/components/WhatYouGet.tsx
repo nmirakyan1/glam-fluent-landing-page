@@ -35,7 +35,7 @@ const WhatYouGet = () => {
           
           {/* The Rooftop Experience */}
           <div className="text-center animate-fade-in animation-delay-900">
-            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide animate-sparkle-text">
+            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide hover:text-shadow-glow transition-all duration-300">
               The Rooftop Experience
             </h3>
             <div className="space-y-4 max-w-3xl mx-auto">
@@ -51,7 +51,7 @@ const WhatYouGet = () => {
 
           {/* The Fluent & Fabulous Guidebook */}
           <div className="text-center animate-fade-in animation-delay-1100">
-            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide animate-sparkle-text">
+            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide hover:text-shadow-glow transition-all duration-300">
               The Fluent & Fabulous Guidebook
             </h3>
             <div className="space-y-4 max-w-3xl mx-auto">
@@ -67,7 +67,7 @@ const WhatYouGet = () => {
 
           {/* Real Speaking Practice */}
           <div className="text-center animate-fade-in animation-delay-1300">
-            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide animate-sparkle-text">
+            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide hover:text-shadow-glow transition-all duration-300">
               Real Speaking Practice
             </h3>
             <div className="space-y-4 max-w-3xl mx-auto">
@@ -83,7 +83,7 @@ const WhatYouGet = () => {
 
           {/* Your Inner Circle */}
           <div className="text-center animate-fade-in animation-delay-1500">
-            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide animate-sparkle-text">
+            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide hover:text-shadow-glow transition-all duration-300">
               Your Inner Circle
             </h3>
             <div className="space-y-4 max-w-3xl mx-auto">
@@ -102,7 +102,7 @@ const WhatYouGet = () => {
 
           {/* The Moment You'll Remember */}
           <div className="text-center animate-fade-in animation-delay-1700">
-            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide animate-sparkle-text">
+            <h3 className="font-playfair text-4xl font-bold text-purple-900 mb-6 tracking-wide hover:text-shadow-glow transition-all duration-300">
               The Moment You'll Remember
             </h3>
             <div className="space-y-4 max-w-3xl mx-auto">
@@ -118,10 +118,10 @@ const WhatYouGet = () => {
 
           {/* Final call to action */}
           <div className="text-center pt-12 border-t border-gold/30 animate-fade-in animation-delay-1900">
-            <p className="font-playfair text-3xl font-bold text-slate-800 leading-[1.4] mb-4 animate-sparkle-text">
+            <p className="font-playfair text-3xl font-bold text-slate-800 leading-[1.4] mb-4 hover:text-shadow-glow transition-all duration-300">
               This is how it starts. This is where you begin.
             </p>
-            <p className="font-playfair text-3xl font-light italic text-purple-900 leading-[1.4] animate-sparkle-text">
+            <p className="font-playfair text-3xl font-light italic text-purple-900 leading-[1.4] hover:text-shadow-glow transition-all duration-300">
               Claim your seat. Let your voice take up space.
             </p>
           </div>
