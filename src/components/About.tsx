@@ -1,5 +1,4 @@
 
-
 const About = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
@@ -10,90 +9,98 @@ const About = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-16 items-center relative">
+        <div className="max-w-6xl mx-auto relative">
           
-          <div className="space-y-12 relative z-20 -mt-8">
+          {/* Header */}
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="font-playfair text-4xl md:text-6xl font-bold text-[#cc0a65] leading-[0.9] tracking-wide">
+              What's stopping you
+            </h2>
+            <h3 className="font-playfair text-3xl md:text-5xl font-light text-black italic leading-[0.9] -mt-4">
+              from speaking up?
+            </h3>
             
-            {/* Cover story headline - Vogue style */}
-            <div className="text-center space-y-6">
-              <h2 className="font-playfair text-5xl md:text-7xl font-bold text-[#cc0a65] leading-[0.9] tracking-wide">
-                ONE HOUR
-              </h2>
-              <h3 className="font-playfair text-4xl md:text-6xl font-light text-black italic leading-[0.9] -mt-4">
-                of Girl Power
-              </h3>
-              
-              {/* Vogue-style subheading */}
-              <div className="border-t border-b border-black py-4 mt-8">
-                <p className="font-poppins text-sm uppercase tracking-[0.3em] text-black font-medium">
-                  The New Language of Confidence
-                </p>
-              </div>
-            </div>
-            
-            {/* Magazine-style pull quotes */}
-            <div className="space-y-12">
-              <blockquote className="text-center border-l-4 border-[#cc0a65] pl-6 italic">
-                <p className="font-playfair text-2xl md:text-3xl text-black leading-[1.4] tracking-wide">
-                  "I used to think confidence came from knowing all the answers."
-                </p>
-              </blockquote>
-              
-              <blockquote className="text-center border-l-4 border-gold pl-6 italic">
-                <p className="font-playfair text-2xl md:text-3xl text-black leading-[1.4] tracking-wide">
-                  "But maybe it comes from saying what you mean — in any language."
-                </p>
-              </blockquote>
-            </div>
-
-            {/* Magazine body text in columns with improved line height */}
-            <div className="grid md:grid-cols-2 gap-8 text-justify">
-              <div className="space-y-6">
-                <p className="font-poppins text-base text-black leading-[1.9]">
-                  You're not here to memorize verbs. You're here to be understood. <em className="text-[#cc0a65] italic">To be magnetic. To be heard.</em>
-                </p>
-                <p className="font-poppins text-base text-black leading-[1.9]">
-                  Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
-                </p>
-              </div>
-              <div className="space-y-6">
-                <p className="font-poppins text-base text-black leading-[1.9]">
-                  Suddenly, English feels a lot like power. This isn't school. It's your spotlight.
-                </p>
-                <p className="font-poppins text-base text-black leading-[1.9] font-medium">
-                  And it's calling your name.
-                </p>
-              </div>
-            </div>
-
-            {/* Vogue-style cover line without glow */}
-            <div className="text-center pt-8 border-t border-black">
-              <p className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] tracking-wide">
-                Welcome to One Hour of Girl Power
-              </p>
-              <p className="font-poppins text-sm uppercase tracking-[0.2em] text-black mt-4">
-                Inside: Your transformation begins
+            {/* Vogue-style subheading */}
+            <div className="border-t border-b border-black py-4 mt-8">
+              <p className="font-poppins text-sm uppercase tracking-[0.3em] text-black font-medium">
+                The fears that keep you silent
               </p>
             </div>
           </div>
           
-          <div className="relative z-10">
-            {/* Fashion magazine style image treatment */}
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-[#cc0a65]/10 via-gold/5 to-pink-400/10 blur-lg"></div>
-              <img 
-                src="/lovable-uploads/f7a700d7-8ca8-4702-90a5-fad681576404.png" 
-                alt="Glamorous women with colorful balloons and stylish sunglasses" 
-                className="relative z-10 w-full h-auto object-cover shadow-2xl transform hover:scale-105 transition-transform duration-700"
-              />
-              
-              {/* Magazine-style image caption */}
-              <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-4">
-                <p className="font-poppins text-xs uppercase tracking-wide text-black">
-                  POWER PLAYERS: The new generation of confident women speaking their truth
+          {/* Fears grid */}
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            
+            {/* Fear 1 */}
+            <div className="space-y-4 animate-fade-in" style={{animationDelay: '0.1s'}}>
+              <blockquote className="border-l-4 border-[#cc0a65] pl-6">
+                <p className="font-playfair text-xl md:text-2xl text-black leading-[1.4] tracking-wide italic">
+                  "I understand everything — but freeze when it's my turn to speak."
                 </p>
-              </div>
+              </blockquote>
+              <p className="font-poppins text-base text-black leading-[1.9] pl-6">
+                I'm scared I'll say it wrong and everyone will notice.
+              </p>
             </div>
+
+            {/* Fear 2 */}
+            <div className="space-y-4 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <blockquote className="border-l-4 border-gold pl-6">
+                <p className="font-playfair text-xl md:text-2xl text-black leading-[1.4] tracking-wide italic">
+                  "I stay quiet — even when I know exactly what I want to say."
+                </p>
+              </blockquote>
+              <p className="font-poppins text-base text-black leading-[1.9] pl-6">
+                The words are in my head… but they don't come out.
+              </p>
+            </div>
+
+            {/* Fear 3 */}
+            <div className="space-y-4 animate-fade-in" style={{animationDelay: '0.3s'}}>
+              <blockquote className="border-l-4 border-[#cc0a65] pl-6">
+                <p className="font-playfair text-xl md:text-2xl text-black leading-[1.4] tracking-wide italic">
+                  "I feel like a different person when I speak English."
+                </p>
+              </blockquote>
+              <p className="font-poppins text-base text-black leading-[1.9] pl-6">
+                Like I've lost my real voice.
+              </p>
+            </div>
+
+            {/* Fear 4 */}
+            <div className="space-y-4 animate-fade-in" style={{animationDelay: '0.4s'}}>
+              <blockquote className="border-l-4 border-gold pl-6">
+                <p className="font-playfair text-xl md:text-2xl text-black leading-[1.4] tracking-wide italic">
+                  "I avoid conversations because I don't trust my English."
+                </p>
+              </blockquote>
+              <p className="font-poppins text-base text-black leading-[1.9] pl-6">
+                I smile, nod, and shrink — just to get through it.
+              </p>
+            </div>
+
+            {/* Fear 5 - spans both columns */}
+            <div className="md:col-span-2 space-y-4 animate-fade-in" style={{animationDelay: '0.5s'}}>
+              <blockquote className="border-l-4 border-[#cc0a65] pl-6 text-center max-w-4xl mx-auto">
+                <p className="font-playfair text-2xl md:text-3xl text-black leading-[1.4] tracking-wide italic">
+                  "I've studied for years… but I still don't feel fluent."
+                </p>
+              </blockquote>
+              <p className="font-poppins text-base text-black leading-[1.9] text-center font-medium">
+                And I'm starting to wonder if I ever will.
+              </p>
+            </div>
+
+          </div>
+
+          {/* Bottom section */}
+          <div className="text-center pt-16 border-t border-black mt-16">
+            <p className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] tracking-wide">
+              You're not alone in this
+            </p>
+            <p className="font-poppins text-sm uppercase tracking-[0.2em] text-black mt-4">
+              And you don't have to stay stuck
+            </p>
           </div>
         </div>
       </div>
@@ -102,4 +109,3 @@ const About = () => {
 };
 
 export default About;
-
