@@ -1,8 +1,7 @@
 
-
 const About = () => {
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-12 bg-white relative overflow-hidden">
       {/* Subtle sparkle effects */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#cc0a65] rounded-full animate-twinkle"></div>
@@ -13,23 +12,6 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
           <div className="space-y-16 relative z-20">
-            
-            {/* Cover story headline - Vogue style */}
-            <div className="text-center space-y-6">
-              <h2 className="font-playfair text-5xl md:text-7xl font-bold text-[#cc0a65] leading-[0.9] tracking-wide">
-                ONE HOUR
-              </h2>
-              <h3 className="font-playfair text-4xl md:text-6xl font-light text-black italic leading-[0.9] -mt-4">
-                of Girl Power
-              </h3>
-              
-              {/* Vogue-style subheading */}
-              <div className="border-t border-b border-black py-4 mt-8">
-                <p className="font-poppins text-sm uppercase tracking-[0.3em] text-black font-medium">
-                  The New Language of Confidence
-                </p>
-              </div>
-            </div>
             
             {/* Magazine-style pull quotes */}
             <div className="space-y-12">
@@ -102,4 +84,3 @@ const About = () => {
 };
 
 export default About;
-
