@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
@@ -11,7 +12,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
-          <div className="space-y-12 relative z-20 -mt-4">
+          <div className="space-y-12 relative z-20 -mt-8">
             
             {/* Cover story headline - Vogue style */}
             <div className="text-center space-y-6">
@@ -65,15 +66,11 @@ const About = () => {
               </div>
             </div>
 
-            {/* Vogue-style cover line with pink glow */}
+            {/* Vogue-style cover line without glow */}
             <div className="text-center pt-8 border-t border-black">
-              <div className="relative">
-                {/* Soft pink glow background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-pink-200/30 via-[#cc0a65]/20 to-pink-200/30 blur-xl rounded-lg"></div>
-                <p className="relative font-playfair text-4xl md:text-5xl font-bold text-[#cc0a65] tracking-wide py-4">
-                  Welcome to One Hour of Girl Power
-                </p>
-              </div>
+              <p className="font-playfair text-4xl md:text-5xl font-bold text-[#cc0a65] tracking-wide">
+                Welcome to One Hour of Girl Power
+              </p>
               <p className="font-poppins text-sm uppercase tracking-[0.2em] text-black mt-4">
                 Inside: Your transformation begins
               </p>
@@ -105,3 +102,4 @@ const About = () => {
 };
 
 export default About;
+
