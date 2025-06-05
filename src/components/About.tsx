@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-pink-50 via-white to-purple-50 relative overflow-hidden">
@@ -15,61 +16,66 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/30 to-transparent md:bg-gradient-to-br md:from-white/70 md:via-white/40 md:to-transparent pointer-events-none z-10"></div>
           
           <div className="space-y-12 relative z-20">
-            {/* Main headline matching reference typography */}
+            {/* Main headline with Vogue magazine typography */}
             <div className="text-center">
-              <h2 className="leading-[1.1] mb-12 tracking-wide">
-                <span className="block font-playfair text-6xl md:text-8xl font-normal text-gray-800 mb-2">
+              <h2 className="leading-[1.1] mb-16 tracking-wide">
+                <span className="block font-playfair text-7xl md:text-9xl font-bold text-white mb-4 tracking-wider">
                   One Hour
                 </span>
-                <span className="block font-allura text-5xl md:text-7xl text-[#cc0a65] italic font-normal -mt-4">
+                <span className="block font-playfair text-6xl md:text-8xl text-[#cc0a65] italic font-normal -mt-6 tracking-wide">
                   of Girl Power
                 </span>
               </h2>
+              
+              {/* BY LINGUAGLEE in caps */}
+              <p className="font-poppins text-sm md:text-base font-semibold text-white uppercase tracking-[0.2em] mt-8">
+                By Linguaglee
+              </p>
             </div>
             
-            {/* Opening statement with generous spacing */}
+            {/* Subheadline with luxe spacing */}
             <div className="space-y-8 text-center">
-              <p className="font-playfair text-2xl md:text-3xl text-gray-700 leading-relaxed font-light italic">
+              <p className="font-poppins text-xl md:text-2xl text-white leading-[1.8] font-normal tracking-wide max-w-2xl mx-auto">
                 I used to think confidence came from knowing all the answers.
               </p>
-              <p className="font-playfair text-2xl md:text-3xl text-gray-700 leading-relaxed font-light italic">
+              <p className="font-poppins text-xl md:text-2xl text-white leading-[1.8] font-normal tracking-wide max-w-2xl mx-auto">
                 But maybe it comes from saying what you mean — in any language.
               </p>
             </div>
 
             {/* Body text with clean sans-serif */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
-              <p className="text-lg md:text-xl text-gray-800 font-light leading-relaxed">
+              <p className="font-poppins text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
                 You're not here to memorize verbs.
               </p>
-              <p className="text-lg md:text-xl text-gray-800 font-light leading-relaxed">
+              <p className="font-poppins text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
                 You're here to be understood. To be magnetic. To be heard.
               </p>
             </div>
 
             {/* Glamorous middle section */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
-              <p className="font-playfair text-xl md:text-2xl text-[#cc0a65] font-light leading-relaxed italic">
+              <p className="font-playfair text-xl md:text-2xl text-[#cc0a65] font-normal leading-[1.8] italic tracking-wide">
                 Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
               </p>
-              <p className="text-lg md:text-xl text-gray-800 font-medium leading-relaxed">
+              <p className="font-poppins text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide">
                 Suddenly, English feels a lot like power.
               </p>
             </div>
 
             {/* Powerful closing */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
-              <p className="font-playfair text-xl md:text-2xl text-gray-800 font-medium leading-relaxed">
+              <p className="font-playfair text-xl md:text-2xl text-white font-medium leading-[1.8] tracking-wide">
                 This isn't school. It's your spotlight.
               </p>
-              <p className="font-playfair text-xl md:text-2xl text-gray-800 font-medium leading-relaxed">
+              <p className="font-playfair text-xl md:text-2xl text-white font-medium leading-[1.8] tracking-wide">
                 And it's calling your name.
               </p>
             </div>
 
             {/* Grand finale with glowing pink underline */}
             <div className="text-center pt-8">
-              <p className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] relative inline-block">
+              <p className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] relative inline-block tracking-wide">
                 Welcome to One Hour of Girl Power.
                 <div className="absolute -bottom-2 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#cc0a65] to-transparent animate-shimmer"></div>
                 <div className="absolute -bottom-1 left-0 right-0 h-[1px] bg-[#cc0a65] opacity-60 blur-sm"></div>
@@ -93,3 +99,4 @@ const About = () => {
 };
 
 export default About;
+
