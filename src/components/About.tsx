@@ -12,7 +12,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
-          <div className="space-y-12 relative z-20 mt-2">
+          <div className="space-y-12 relative z-20 mt-0">
             
             {/* Cover story headline - Vogue style */}
             <div className="text-center space-y-6">
