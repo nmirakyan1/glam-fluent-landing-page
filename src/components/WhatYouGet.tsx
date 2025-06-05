@@ -1,8 +1,18 @@
 
 const WhatYouGet = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-pink-50 via-rose-50 to-orange-50">
-      <div className="container mx-auto px-6 max-w-4xl">
+    <section className="py-24 relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img 
+          src="/lovable-uploads/68834f5a-83dc-4aa9-a7c5-3bd9ff25a44f.png" 
+          alt="Celebration with confetti" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-50/80 via-rose-50/85 to-orange-50/80"></div>
+      </div>
+
+      <div className="container mx-auto px-6 max-w-4xl relative z-10">
         
         {/* Editorial headline */}
         <div className="text-center mb-20">
