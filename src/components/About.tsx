@@ -1,5 +1,4 @@
 
-
 const About = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-pink-50 via-white to-purple-50 relative overflow-hidden">
@@ -28,27 +27,27 @@ const About = () => {
               </h2>
               
               {/* BY LINGUAGLEE in caps */}
-              <p className="font-poppins text-sm md:text-base font-semibold text-white uppercase tracking-[0.2em] mt-8">
+              <p className="font-sans text-sm md:text-base font-semibold text-white uppercase tracking-[0.2em] mt-8">
                 By Linguaglee
               </p>
             </div>
             
             {/* Subheadline with luxe spacing */}
             <div className="space-y-8 text-center">
-              <p className="font-poppins text-xl md:text-2xl text-white leading-[1.8] font-normal tracking-wide max-w-2xl mx-auto">
+              <p className="font-sans text-xl md:text-2xl text-white leading-[1.8] font-normal tracking-wide max-w-2xl mx-auto">
                 I used to think confidence came from knowing all the answers.
               </p>
-              <p className="font-poppins text-xl md:text-2xl text-white leading-[1.8] font-normal tracking-wide max-w-2xl mx-auto">
+              <p className="font-sans text-xl md:text-2xl text-white leading-[1.8] font-normal tracking-wide max-w-2xl mx-auto">
                 But maybe it comes from saying what you mean — in any language.
               </p>
             </div>
 
             {/* Body text with clean sans-serif */}
             <div className="space-y-6 text-center max-w-2xl mx-auto">
-              <p className="font-poppins text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
+              <p className="font-sans text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
                 You're not here to memorize verbs.
               </p>
-              <p className="font-poppins text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
+              <p className="font-sans text-lg md:text-xl text-white font-light leading-relaxed tracking-wide">
                 You're here to be understood. To be magnetic. To be heard.
               </p>
             </div>
@@ -58,7 +57,7 @@ const About = () => {
               <p className="font-playfair text-xl md:text-2xl text-[#cc0a65] font-normal leading-[1.8] italic tracking-wide">
                 Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
               </p>
-              <p className="font-poppins text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide">
+              <p className="font-sans text-lg md:text-xl text-white font-medium leading-relaxed tracking-wide">
                 Suddenly, English feels a lot like power.
               </p>
             </div>
@@ -99,4 +98,3 @@ const About = () => {
 };
 
 export default About;
-
