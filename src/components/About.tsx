@@ -49,18 +49,18 @@ const About = () => {
             {/* Magazine body text in columns with improved line height */}
             <div className="grid md:grid-cols-2 gap-8 text-justify">
               <div className="space-y-6">
-                <p className="font-poppins text-base text-black leading-[1.8]">
-                  You're not here to memorize verbs. You're here to be understood. <em className="text-[#cc0a65]">To be magnetic. To be heard.</em>
+                <p className="font-poppins text-base text-black leading-[1.9]">
+                  You're not here to memorize verbs. You're here to be understood. <em className="text-[#cc0a65] italic">To be magnetic. To be heard.</em>
                 </p>
-                <p className="font-poppins text-base text-black leading-[1.8]">
+                <p className="font-poppins text-base text-black leading-[1.9]">
                   Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
                 </p>
               </div>
               <div className="space-y-6">
-                <p className="font-poppins text-base text-black leading-[1.8]">
+                <p className="font-poppins text-base text-black leading-[1.9]">
                   Suddenly, English feels a lot like power. This isn't school. It's your spotlight.
                 </p>
-                <p className="font-poppins text-base text-black leading-[1.8] font-medium">
+                <p className="font-poppins text-base text-black leading-[1.9] font-medium">
                   And it's calling your name.
                 </p>
               </div>
@@ -68,7 +68,7 @@ const About = () => {
 
             {/* Vogue-style cover line without glow */}
             <div className="text-center pt-8 border-t border-black">
-              <p className="font-playfair text-4xl md:text-5xl font-bold text-[#cc0a65] tracking-wide">
+              <p className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] tracking-wide">
                 Welcome to One Hour of Girl Power
               </p>
               <p className="font-poppins text-sm uppercase tracking-[0.2em] text-black mt-4">
