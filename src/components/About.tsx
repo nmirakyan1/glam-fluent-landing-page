@@ -15,13 +15,11 @@ const About = () => {
             {/* Cinematic Headline */}
             <div className="text-center md:text-left">
               <h2 className="font-playfair text-4xl md:text-6xl font-bold leading-tight mb-6">
-                <span className="block text-gray-800 animate-sparkle-text">
+                <span className="block text-gray-800">
                   It's not just an English class,
                 </span>
-                <span className="block text-[#cc0a65] relative animate-glow">
+                <span className="block text-[#cc0a65]">
                   It's your moment.
-                  <div className="absolute -bottom-3 left-0 right-0 h-[3px] bg-gradient-to-r from-[#cc0a65] via-gold to-pink-400 opacity-80 animate-shimmer"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#cc0a65]/30 to-transparent blur-xl"></div>
                 </span>
               </h2>
             </div>
