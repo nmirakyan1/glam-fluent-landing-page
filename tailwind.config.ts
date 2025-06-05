@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,13 +66,26 @@ export default {
 				'linguaglee-pink': '#e49dc2',
 				'linguaglee-gold': '#f4d03f',
 				'linguaglee-lavender': '#e8d5e8',
-				'gold': '#ffd700'
+				'gold': '#ffd700',
+				'champagne': {
+					50: '#fef7ed',
+					100: '#fdf2d9',
+					200: '#fae6b3',
+					300: '#f7d482',
+					400: '#f2bb4f',
+					500: '#eea92b',
+					600: '#d88f20',
+					700: '#b3711c',
+					800: '#90591e',
+					900: '#74481c'
+				}
 			},
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
 				'poppins': ['Poppins', 'sans-serif'],
 				'montserrat': ['Montserrat', 'sans-serif'],
-				'allura': ['Allura', 'cursive']
+				'allura': ['Allura', 'cursive'],
+				'sans': ['Inter', 'DM Sans', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -180,6 +194,17 @@ export default {
 				'shimmer': 'shimmer 4s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite',
 				'sparkle-text': 'sparkle-text 3s ease-in-out infinite'
+			},
+			animationDelay: {
+				'300': '300ms',
+				'500': '500ms',
+				'700': '700ms',
+				'900': '900ms',
+				'1100': '1100ms',
+				'1300': '1300ms',
+				'1500': '1500ms',
+				'1700': '1700ms',
+				'1900': '1900ms'
 			}
 		}
 	},
@@ -189,6 +214,33 @@ export default {
 			const newUtilities = {
 				'.text-shadow-glow': {
 					textShadow: '0 0 10px rgba(236, 43, 141, 0.5), 0 0 20px rgba(236, 43, 141, 0.3), 0 0 30px rgba(236, 43, 141, 0.2)'
+				},
+				'.animation-delay-300': {
+					animationDelay: '300ms'
+				},
+				'.animation-delay-500': {
+					animationDelay: '500ms'
+				},
+				'.animation-delay-700': {
+					animationDelay: '700ms'
+				},
+				'.animation-delay-900': {
+					animationDelay: '900ms'
+				},
+				'.animation-delay-1100': {
+					animationDelay: '1100ms'
+				},
+				'.animation-delay-1300': {
+					animationDelay: '1300ms'
+				},
+				'.animation-delay-1500': {
+					animationDelay: '1500ms'
+				},
+				'.animation-delay-1700': {
+					animationDelay: '1700ms'
+				},
+				'.animation-delay-1900': {
+					animationDelay: '1900ms'
 				}
 			}
 			addUtilities(newUtilities)
