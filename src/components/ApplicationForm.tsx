@@ -67,9 +67,6 @@ const ApplicationForm = () => {
               <Label htmlFor="fullName" className="font-playfair font-semibold text-white text-lg mb-3 block">
                 Name
               </Label>
-              <p className="font-playfair text-pink-200/80 text-sm mb-3 italic">
-                What should we call you when you walk in like you own the room?
-              </p>
               <Input
                 id="fullName"
                 name="fullName"
@@ -86,9 +83,6 @@ const ApplicationForm = () => {
               <Label htmlFor="email" className="font-playfair font-semibold text-white text-lg mb-3 block">
                 Email
               </Label>
-              <p className="font-playfair text-pink-200/80 text-sm mb-3 italic">
-                So we can send the invite that changes everything.
-              </p>
               <Input
                 id="email"
                 name="email"
