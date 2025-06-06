@@ -89,7 +89,7 @@ const CurriculumSection = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-12 relative overflow-hidden bg-gradient-to-br from-champagne-50 via-rose-50 to-pink-50">
+    <section ref={sectionRef} className="py-8 relative overflow-hidden bg-gradient-to-br from-champagne-50 via-rose-50 to-pink-50">
       
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
         
@@ -116,14 +116,14 @@ const CurriculumSection = () => {
               }`}
               style={{ transitionDelay: `${Math.floor(index / 2) * 200}ms` }}
             >
-              <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:shadow-[0_8px_40px_0_rgba(31,38,135,0.5)] hover:bg-white/15 hover:border-white/30 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full backdrop-saturate-200 before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-br before:from-white/20 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 relative overflow-hidden">
+              <div className="bg-white/25 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-xl hover:bg-white/30 hover:border-white/50 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full backdrop-saturate-150 relative overflow-hidden">
                 
-                {/* Glass reflection effect */}
-                <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/30 to-transparent opacity-60 rounded-t-3xl"></div>
+                {/* Subtle glass reflection effect */}
+                <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-b from-white/15 to-transparent opacity-40 rounded-t-3xl"></div>
                 
                 {/* Session Number */}
                 <div className="mb-4 relative z-10">
-                  <span className="inline-block text-sm font-medium text-purple-600 bg-white/30 backdrop-blur-sm px-3 py-1 rounded-full mb-4 border border-white/40 shadow-sm">
+                  <span className="inline-block text-sm font-medium text-purple-600 bg-white/40 backdrop-blur-sm px-3 py-1 rounded-full mb-4 border border-white/30 shadow-sm">
                     Session {index + 1}
                   </span>
                 </div>
