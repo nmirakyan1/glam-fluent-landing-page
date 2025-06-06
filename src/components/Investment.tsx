@@ -42,7 +42,7 @@ const Investment = () => {
             
             <div className="bg-purple-600/20 backdrop-blur-sm border border-purple-400/30 p-6">
               <p className="font-playfair text-white font-medium text-lg">
-                Spots are limited
+                Spots are limited to just 4 women per group
               </p>
             </div>
           </div>
