@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 
@@ -11,8 +10,7 @@ const ApplicationForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     fullName: '',
-    contact: '',
-    motivation: '',
+    email: '',
     agreement: false
   });
 
@@ -22,7 +20,7 @@ const ApplicationForm = () => {
     if (!formData.agreement) {
       toast({
         title: "Please confirm your commitment",
-        description: "Check the box to confirm you're ready for this transformation.",
+        description: "Check the box to confirm you're ready to invest in yourself.",
         variant: "destructive"
       });
       return;
@@ -32,19 +30,18 @@ const ApplicationForm = () => {
     
     toast({
       title: "Application Submitted!",
-      description: "We'll be in touch within 24 hours to confirm your spot. Get ready to transform!",
+      description: "We'll be in touch within 24 hours to confirm your spot. Get ready to shine!",
     });
 
     // Reset form
     setFormData({
       fullName: '',
-      contact: '',
-      motivation: '',
+      email: '',
       agreement: false
     });
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -57,11 +54,12 @@ const ApplicationForm = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white text-center mb-8">
-            Apply for Fluent & Fabulous
+            Join One Hour of Girl Power English Course
           </h2>
           
           <p className="font-playfair text-xl text-pink-200 text-center mb-12">
-            Ready to glow up your English?
+            Ready to speak English with confidence, charisma, and connection?<br />
+            Apply below to claim your seat.
           </p>
           
           <form onSubmit={handleSubmit} className="space-y-8 bg-black/60 backdrop-blur-sm border-2 border-pink-400/30 p-10 shadow-2xl">
@@ -69,6 +67,9 @@ const ApplicationForm = () => {
               <Label htmlFor="fullName" className="font-playfair font-semibold text-white text-lg mb-3 block">
                 Name
               </Label>
+              <p className="font-playfair text-pink-200/80 text-sm mb-3 italic">
+                What should we call you when you walk in like you own the room?
+              </p>
               <Input
                 id="fullName"
                 name="fullName"
@@ -82,33 +83,21 @@ const ApplicationForm = () => {
             </div>
             
             <div>
-              <Label htmlFor="contact" className="font-playfair font-semibold text-white text-lg mb-3 block">
+              <Label htmlFor="email" className="font-playfair font-semibold text-white text-lg mb-3 block">
                 Email
               </Label>
+              <p className="font-playfair text-pink-200/80 text-sm mb-3 italic">
+                So we can send the invite that changes everything.
+              </p>
               <Input
-                id="contact"
-                name="contact"
-                type="text"
+                id="email"
+                name="email"
+                type="email"
                 required
-                value={formData.contact}
+                value={formData.email}
                 onChange={handleInputChange}
                 className="bg-black/40 border-2 border-purple-400/50 focus:border-purple-400 text-white py-4 text-lg backdrop-blur-sm"
                 placeholder="Your email"
-              />
-            </div>
-            
-            <div>
-              <Label htmlFor="motivation" className="font-playfair font-semibold text-white text-lg mb-3 block">
-                Why this is for you
-              </Label>
-              <Textarea
-                id="motivation"
-                name="motivation"
-                required
-                value={formData.motivation}
-                onChange={handleInputChange}
-                className="bg-black/40 border-2 border-pink-400/50 focus:border-pink-400 min-h-[120px] text-white text-lg backdrop-blur-sm"
-                placeholder="Tell us what's calling you to this experience..."
               />
             </div>
             
@@ -122,7 +111,7 @@ const ApplicationForm = () => {
                 className="mt-1 border-2 border-pink-400/70 data-[state=checked]:bg-pink-600 w-5 h-5"
               />
               <Label htmlFor="agreement" className="font-playfair text-lg text-white leading-relaxed">
-                I'm ready to invest in this glow-up.
+                I'm ready to invest in myself, in English, and in the moment.
               </Label>
             </div>
             
@@ -130,7 +119,7 @@ const ApplicationForm = () => {
               type="submit"
               className="w-full bg-gradient-to-r from-pink-600 to-purple-700 hover:from-pink-700 hover:to-purple-800 text-white font-playfair font-bold py-6 text-2xl rounded-none shadow-2xl hover:shadow-pink-500/25 transition-all duration-500 transform hover:scale-105 border-2 border-pink-400/30"
             >
-              Apply Now
+              Yes, I'm Ready to Shine
             </Button>
           </form>
         </div>
