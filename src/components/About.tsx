@@ -1,7 +1,32 @@
 
+import { useEffect, useRef, useState } from 'react';
+
 const About = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        const sectionTop = rect.top;
+        const sectionHeight = rect.height;
+        const windowHeight = window.innerHeight;
+        
+        // Calculate scroll progress for this section
+        const scrollProgress = Math.max(0, Math.min(1, (windowHeight - sectionTop) / (windowHeight + sectionHeight)));
+        setScrollY(scrollProgress);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Initial call
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="py-16 bg-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 bg-white relative overflow-hidden">
       {/* Subtle sparkle effects */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[#cc0a65] rounded-full animate-twinkle"></div>
@@ -11,7 +36,14 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
-          <div className="space-y-12 relative z-20">
+          {/* Text content with subtle parallax */}
+          <div 
+            className="space-y-12 relative z-20"
+            style={{
+              transform: `translateY(${scrollY * -20}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
             
             {/* Cover story headline - Vogue style */}
             <div className="text-center space-y-6">
@@ -77,7 +109,14 @@ const About = () => {
             </div>
           </div>
           
-          <div className="relative z-10">
+          {/* Image with slower parallax movement */}
+          <div 
+            className="relative z-10"
+            style={{
+              transform: `translateY(${scrollY * -10}px)`,
+              transition: 'transform 0.1s ease-out'
+            }}
+          >
             {/* Fashion magazine style image treatment */}
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-[#cc0a65]/10 via-gold/5 to-pink-400/10 blur-lg"></div>
