@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 const CurriculumSection = () => {
@@ -116,14 +115,11 @@ const CurriculumSection = () => {
               }`}
               style={{ transitionDelay: `${Math.floor(index / 2) * 200}ms` }}
             >
-              <div className="bg-white/25 backdrop-blur-md rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-xl hover:bg-white/30 hover:border-white/50 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full backdrop-saturate-150 relative overflow-hidden">
-                
-                {/* Subtle glass reflection effect */}
-                <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-b from-white/15 to-transparent opacity-40 rounded-t-3xl"></div>
+              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border border-white/60 shadow-md hover:shadow-lg hover:bg-white/70 hover:border-white/70 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full relative overflow-hidden">
                 
                 {/* Session Number */}
                 <div className="mb-4 relative z-10">
-                  <span className="inline-block text-sm font-medium text-purple-600 bg-white/40 backdrop-blur-sm px-3 py-1 rounded-full mb-4 border border-white/30 shadow-sm">
+                  <span className="inline-block text-sm font-medium text-purple-600 bg-white/60 backdrop-blur-sm px-3 py-1 rounded-full mb-4 border border-white/50 shadow-sm">
                     Session {index + 1}
                   </span>
                 </div>
