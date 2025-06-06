@@ -116,11 +116,11 @@ const CurriculumSection = () => {
               }`}
               style={{ transitionDelay: `${Math.floor(index / 2) * 200}ms` }}
             >
-              <div className="bg-white/50 backdrop-blur-sm rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-xl hover:bg-white/60 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full">
+              <div className="bg-white/20 backdrop-blur-lg rounded-3xl p-8 border border-white/30 shadow-2xl hover:shadow-3xl hover:bg-white/25 hover:border-white/40 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full backdrop-saturate-150">
                 
                 {/* Session Number */}
                 <div className="mb-4">
-                  <span className="inline-block text-sm font-medium text-purple-600 bg-purple-100 px-3 py-1 rounded-full mb-4">
+                  <span className="inline-block text-sm font-medium text-purple-600 bg-white/40 backdrop-blur-sm px-3 py-1 rounded-full mb-4 border border-white/20">
                     Session {index + 1}
                   </span>
                 </div>
