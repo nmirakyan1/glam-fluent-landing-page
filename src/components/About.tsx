@@ -68,7 +68,7 @@ const About = () => {
 
             {/* Bottom section header */}
             <div className="text-center pt-8 border-t border-black">
-              <p className="font-playfair text-4xl md:text-5xl font-bold text-[#cc0a65] tracking-wide leading-tight">
+              <p className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] tracking-wide leading-tight">
                 Welcome to One Hour of Girl Power
               </p>
               <p className="font-sans text-base text-black mt-4 leading-relaxed max-w-2xl mx-auto">
