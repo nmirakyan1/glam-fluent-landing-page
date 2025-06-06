@@ -49,13 +49,13 @@ const Hero = () => {
             
             {/* Subheading */}
             <p className="font-montserrat text-base md:text-lg text-white mb-10 font-black tracking-[0.4em] uppercase drop-shadow-2xl">
-              by LinguaGlee
+              by LinguaGlee | English School with Attitude
             </p>
             
             {/* Tagline with enhanced text shadow */}
             <div className="relative font-poppins text-xl md:text-2xl font-light text-white mb-14 leading-relaxed max-w-4xl mx-auto text-center tracking-wide [text-shadow:0_0_20px_rgba(255,255,255,0.4),0_0_40px_rgba(236,43,141,0.3)]">
-              <p className="mb-2">One unforgettable hour.</p>
-              <p>English. Confidence. Sparkle. Sisterhood.</p>
+              <p className="mb-2">Learn English. Sparkle. Connect.</p>
+              <p>A One-Hour English Experience for Women Who Want More.</p>
             </div>
             
             {/* CTA Button */}
