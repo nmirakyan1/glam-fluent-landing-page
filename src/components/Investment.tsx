@@ -30,7 +30,7 @@ const Investment = () => {
             </p>
           </div>
           
-          <div className="text-8xl font-playfair font-bold text-[#cc0a65] mb-8 drop-shadow-lg animate-fade-in animation-delay-300">
+          <div className="text-8xl font-playfair font-bold bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent mb-8 drop-shadow-lg animate-fade-in animation-delay-300">
             $400
           </div>
           
