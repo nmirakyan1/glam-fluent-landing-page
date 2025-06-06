@@ -97,6 +97,9 @@ export default {
 			textShadow: {
 				'glow': '0 0 8px rgba(147, 51, 234, 0.3), 0 0 16px rgba(147, 51, 234, 0.2)'
 			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {
