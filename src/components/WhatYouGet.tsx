@@ -69,7 +69,6 @@ const WhatYouGet = () => {
           >
             <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-lg hover:shadow-xl hover:bg-white/70 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full">
               <div className="mb-4">
-                <span className="inline-block w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-white text-sm font-bold flex items-center justify-center mb-4">1</span>
                 <h3 className="font-playfair text-2xl font-bold text-purple-900 mb-3 group-hover:text-shadow-glow transition-all duration-300">
                   The Power Hour
                 </h3>
@@ -91,7 +90,6 @@ const WhatYouGet = () => {
           >
             <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-lg hover:shadow-xl hover:bg-white/70 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full">
               <div className="mb-4">
-                <span className="inline-block w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-white text-sm font-bold flex items-center justify-center mb-4">2</span>
                 <h3 className="font-playfair text-2xl font-bold text-purple-900 mb-3 group-hover:text-shadow-glow transition-all duration-300">
                   The Fluent & Fabulous Guidebook
                 </h3>
@@ -113,7 +111,6 @@ const WhatYouGet = () => {
           >
             <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-lg hover:shadow-xl hover:bg-white/70 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full">
               <div className="mb-4">
-                <span className="inline-block w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-white text-sm font-bold flex items-center justify-center mb-4">3</span>
                 <h3 className="font-playfair text-2xl font-bold text-purple-900 mb-3 group-hover:text-shadow-glow transition-all duration-300">
                   The Real Talk Practice
                 </h3>
@@ -135,7 +132,6 @@ const WhatYouGet = () => {
           >
             <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-lg hover:shadow-xl hover:bg-white/70 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full">
               <div className="mb-4">
-                <span className="inline-block w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-white text-sm font-bold flex items-center justify-center mb-4">4</span>
                 <h3 className="font-playfair text-2xl font-bold text-purple-900 mb-3 group-hover:text-shadow-glow transition-all duration-300">
                   The Sisterhood Circle
                 </h3>
