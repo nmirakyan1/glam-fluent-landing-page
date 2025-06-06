@@ -1,5 +1,4 @@
 
-
 const About = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
@@ -12,7 +11,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
-          <div className="space-y-12 relative z-20 -mt-8">
+          <div className="space-y-12 relative z-20">
             
             {/* Cover story headline - Vogue style */}
             <div className="text-center space-y-6">
@@ -25,7 +24,7 @@ const About = () => {
               
               {/* Vogue-style subheading */}
               <div className="border-t border-b border-black py-4 mt-8">
-                <p className="font-poppins text-sm uppercase tracking-[0.3em] text-black font-medium">
+                <p className="font-sans text-sm uppercase tracking-[0.3em] text-black font-medium">
                   The New Language of Confidence
                 </p>
               </div>
@@ -35,44 +34,45 @@ const About = () => {
             <div className="space-y-12">
               <blockquote className="text-center border-l-4 border-[#cc0a65] pl-6 italic">
                 <p className="font-playfair text-2xl md:text-3xl text-black leading-[1.4] tracking-wide">
-                  "I used to think confidence came from knowing all the answers."
+                  "I used to think confidence meant knowing all the answers."
                 </p>
               </blockquote>
               
               <blockquote className="text-center border-l-4 border-gold pl-6 italic">
                 <p className="font-playfair text-2xl md:text-3xl text-black leading-[1.4] tracking-wide">
-                  "But maybe it comes from saying what you mean — in any language."
+                  "But maybe it's just saying what you really mean. In any language."
                 </p>
               </blockquote>
             </div>
 
-            {/* Magazine body text in columns with improved line height */}
-            <div className="grid md:grid-cols-2 gap-8 text-justify">
-              <div className="space-y-6">
-                <p className="font-poppins text-base text-black leading-[1.8]">
-                  You're not here to memorize verbs. You're here to be understood. <em className="text-[#cc0a65]">To be magnetic. To be heard.</em>
+            {/* Body copy - refined and polished */}
+            <div className="space-y-8 text-left">
+              <div className="space-y-4">
+                <p className="font-sans text-lg text-black leading-[1.8] font-medium">
+                  This is not a grammar class.
                 </p>
-                <p className="font-poppins text-base text-black leading-[1.8]">
-                  Add a little lipstick, a rooftop breeze, and a sentence that lands just right…
+                <p className="font-sans text-lg text-black leading-[1.8]">
+                  It's an hour to reconnect with your voice in English. <em className="text-[#cc0a65] font-medium">To be magnetic. To be heard.</em> To speak up and light up the room.
                 </p>
               </div>
-              <div className="space-y-6">
-                <p className="font-poppins text-base text-black leading-[1.8]">
-                  Suddenly, English feels a lot like power. This isn't school. It's your spotlight.
+              
+              <div className="space-y-4">
+                <p className="font-sans text-lg text-black leading-[1.8]">
+                  You don't need perfect words. You need the right ones. And the confidence to say them.
                 </p>
-                <p className="font-poppins text-base text-black leading-[1.8] font-medium">
-                  And it's calling your name.
+                <p className="font-sans text-lg text-black leading-[1.8] font-medium italic">
+                  This isn't school. This is your spotlight.
                 </p>
               </div>
             </div>
 
-            {/* Vogue-style cover line without glow */}
+            {/* Bottom section header */}
             <div className="text-center pt-8 border-t border-black">
-              <p className="font-playfair text-4xl md:text-5xl font-bold text-[#cc0a65] tracking-wide">
+              <p className="font-playfair text-4xl md:text-5xl font-bold text-[#cc0a65] tracking-wide leading-tight">
                 Welcome to One Hour of Girl Power
               </p>
-              <p className="font-poppins text-sm uppercase tracking-[0.2em] text-black mt-4">
-                Inside: Your transformation begins
+              <p className="font-sans text-base text-black mt-4 leading-relaxed max-w-2xl mx-auto">
+                An English experience for women who want to be understood, uplifted, and unforgettable.
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ const About = () => {
               
               {/* Magazine-style image caption */}
               <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-4">
-                <p className="font-poppins text-xs uppercase tracking-wide text-black">
+                <p className="font-sans text-xs uppercase tracking-wide text-black">
                   POWER PLAYERS: The new generation of confident women speaking their truth
                 </p>
               </div>
@@ -102,4 +102,3 @@ const About = () => {
 };
 
 export default About;
-
