@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 
 const CurriculumSection = () => {
@@ -89,7 +88,7 @@ const CurriculumSection = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-8 relative overflow-hidden bg-gradient-to-br from-champagne-50 via-rose-50 to-pink-50">
+    <section ref={sectionRef} className="py-4 relative overflow-hidden bg-gradient-to-br from-champagne-50 via-rose-50 to-pink-50">
       
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
         
