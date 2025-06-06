@@ -36,11 +36,11 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center relative">
           
-          {/* Text content with subtle parallax */}
+          {/* Text content with more noticeable parallax */}
           <div 
             className="space-y-12 relative z-20"
             style={{
-              transform: `translateY(${scrollY * -20}px)`,
+              transform: `translateY(${scrollY * -60}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
@@ -100,7 +100,7 @@ const About = () => {
 
             {/* Bottom section header */}
             <div className="text-center pt-8 border-t border-black">
-              <p className="font-playfair text-3xl md:text-4xl font-bold text-[#cc0a65] tracking-wide leading-tight">
+              <p className="font-playfair text-2xl md:text-3xl font-bold text-[#cc0a65] tracking-wide leading-tight">
                 Welcome to One Hour of Girl Power
               </p>
               <p className="font-sans text-base text-black mt-4 leading-relaxed max-w-2xl mx-auto">
@@ -113,7 +113,7 @@ const About = () => {
           <div 
             className="relative z-10"
             style={{
-              transform: `translateY(${scrollY * -10}px)`,
+              transform: `translateY(${scrollY * -30}px)`,
               transition: 'transform 0.1s ease-out'
             }}
           >
