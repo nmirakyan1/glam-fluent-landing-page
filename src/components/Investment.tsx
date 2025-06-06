@@ -12,8 +12,9 @@ const Investment = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-purple-900 via-black to-purple-900">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
-          Girl Power Investment
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
+          <span className="text-white">Girl Power </span>
+          <span className="text-[#cc0a65]">Investment</span>
         </h2>
         <p className="font-playfair text-xl md:text-2xl text-white/90 mb-12 italic">
           Because this isn't just a class. It's a turning point.
