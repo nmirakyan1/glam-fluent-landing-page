@@ -18,7 +18,7 @@ const Investment = () => {
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4">
-          <span className="text-white">Girl Power </span>
+          <span className="text-[#E24E9D]">Girl Power </span>
           <span className="text-white">Investment</span>
         </h2>
         <p className="font-playfair text-xl md:text-2xl text-white/90 mb-12 italic">
