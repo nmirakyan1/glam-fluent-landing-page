@@ -23,7 +23,7 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/86a23508-a906-474a-a3a7-9f2b4eb948f3.png" 
           alt="LinguaGlee Logo" 
-          className="h-32 w-auto drop-shadow-2xl opacity-90"
+          className="h-48 w-auto drop-shadow-2xl opacity-90"
         />
       </div>
 
