@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 
 const CurriculumSection = () => {
@@ -115,11 +116,11 @@ const CurriculumSection = () => {
               }`}
               style={{ transitionDelay: `${Math.floor(index / 2) * 200}ms` }}
             >
-              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border border-white/60 shadow-md hover:shadow-lg hover:bg-white/70 hover:border-white/70 transition-all duration-300 hover:transform hover:-translate-y-1 group h-full relative overflow-hidden">
+              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1),0_16px_64px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_48px_rgba(0,0,0,0.15),0_24px_96px_rgba(0,0,0,0.1)] hover:bg-white/70 hover:border-white/70 transition-all duration-300 hover:transform hover:-translate-y-2 group h-full relative overflow-hidden">
                 
                 {/* Session Number */}
                 <div className="mb-4 relative z-10">
-                  <span className="inline-block text-sm font-medium text-purple-600 bg-white/60 backdrop-blur-sm px-3 py-1 rounded-full mb-4 border border-white/50 shadow-sm">
+                  <span className="inline-block text-sm font-medium text-purple-600 bg-white/60 backdrop-blur-sm px-3 py-1 rounded-full mb-4 border border-white/50 shadow-[0_4px_16px_rgba(0,0,0,0.1)]">
                     Session {index + 1}
                   </span>
                 </div>
